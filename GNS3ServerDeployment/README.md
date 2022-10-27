@@ -54,26 +54,26 @@ To perform the right deployment follow each of the following steps:
 
 5. [Install Docker CE on Ubuntu 22.04|20.04|18.04](https://docs.docker.com/engine/install/ubuntu/).
 
-  - Add your user account to docker group.
+    - Add your user account to docker group.
 
-    ```console
-    sudo usermod -aG docker $USER
-    newgrp docker
-    ```
+        ```console
+        sudo usermod -aG docker $USER
+        newgrp docker
+        ```
 
-  - Verify installation by checking Docker version:
+    - Verify installation by checking Docker version:
 
-    ```console
-    docker version
-    ```
+        ```console
+        docker version
+        ```
 
-  - After installing Docker and IOU, add your user to the following groups:
+    - After installing Docker and IOU, add your user to the following groups:
 
-    ```console
-    for i in ubridge libvirt kvm wireshark docker; do
-        sudo usermod -aG $i $USER
-    done
-    ```
+        ```console
+        for i in ubridge libvirt kvm wireshark docker; do
+            sudo usermod -aG $i $USER
+        done
+        ```
 
 6. Run GNS3 server:
 
@@ -89,7 +89,7 @@ To perform the right deployment follow each of the following steps:
 
    - Verify the service:
 
-    <img src="img/front.png" alt="drawing" width="700"/>
+        <img src="img/front.png" alt="drawing" width="700"/>
 
 ## Connect to GNS3 Server from GNS3 client
 
@@ -106,11 +106,17 @@ To perform the right deployment follow each of the following steps:
 
 2. Verify that the server has connected properly.
 
-<img src="img/output.png" alt="drawing" width="300"/>
+    <img src="img/output.png" alt="drawing" width="300"/>
 
 ## How to bypass a network of restrictions by tunneling
 
 If we are under a restrictive network with firewalls blocking the network, the following tunneling is proposed to bypass it.
+
+```console
+ssh -N -i key.pem -L localhost:3080:private_ip_ec2:3080 username_ec2@public_ip_ec2
+```
+
+For instance:
 
 ```console
 ssh -N -i .\openstack.pem -L localhost:3080:172.31.88.200:3080 ubuntu@54.89.220.232
