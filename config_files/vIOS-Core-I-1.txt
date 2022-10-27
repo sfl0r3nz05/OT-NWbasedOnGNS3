@@ -1,0 +1,176 @@
+Building configuration...
+
+Current configuration : 3156 bytes
+!
+! Last configuration change at 17:07:27 UTC+2 Wed Sep 13 2017 by raadmin
+! NVRAM config last updated at 17:07:12 UTC+2 Wed Sep 13 2017 by raadmin
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+service compress-config
+!
+hostname vIOS-Core-I
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$78b3$xtQa1A6wFCybA2fbZZWeU.
+!
+username admin privilege 15 secret 5 $1$SUUR$R.rWrThT1MWlk/GocKXzc0
+aaa new-model
+!
+!         
+aaa authentication login default group radius local
+aaa authentication enable default group radius enable
+aaa authorization console
+aaa authorization exec default group radius local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone UTC+2 2 0
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name companyXYZ.sk
+ip name-server 172.16.50.1
+ip cef    
+no ipv6 cef
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.1.1.1 255.255.255.255
+ ip ospf message-digest-key 1 md5 7 14543F123C05393865786061
+!
+interface GigabitEthernet0/2
+ description Link to vEOS-Dis-I
+ no switchport
+ ip address 10.0.0.10 255.255.255.252
+ ip ospf message-digest-key 1 md5 7 03477612360E325F0F594A51
+ ip ospf network point-to-point
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ description Link to vEOS-Dis-II
+ no switchport
+ ip address 10.0.0.18 255.255.255.252
+ ip ospf message-digest-key 1 md5 7 01502B1D6B0A151C601C1D5D
+ ip ospf network point-to-point
+ negotiation auto
+!
+interface GigabitEthernet0/0
+ description Link to vIOS-Core-II     
+ no switchport
+ ip address 10.0.0.5 255.255.255.252
+ ip ospf message-digest-key 1 md5 7 15512615342B383769636676
+ ip ospf network point-to-point
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ description Link to ASAv-I
+ no switchport
+ ip address 172.16.0.10 255.255.255.252
+ ip ospf message-digest-key 1 md5 7 05482B16114D5D1A58554446
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ description Unused
+ shutdown
+ media-type rj45
+ negotiation auto
+ no lldp transmit
+ no lldp receive
+!
+interface GigabitEthernet1/1
+ description Unused
+ shutdown
+ media-type rj45
+ negotiation auto
+ no lldp transmit
+ no lldp receive
+!
+interface GigabitEthernet1/2
+ description Unused
+ shutdown
+ media-type rj45
+ negotiation auto
+ no lldp transmit
+ no lldp receive
+!
+interface GigabitEthernet1/3
+ description Unused
+ shutdown
+ media-type rj45
+ negotiation auto
+ no lldp transmit
+ no lldp receive
+!
+router ospf 1
+ router-id 10.1.1.1
+ area 0 authentication message-digest
+ network 10.0.0.4 0.0.0.3 area 0
+ network 10.0.0.8 0.0.0.3 area 0
+ network 10.0.0.16 0.0.0.3 area 0
+ network 10.1.1.1 0.0.0.0 area 0
+ network 172.16.0.8 0.0.0.3 area 0
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+ip radius source-interface Loopback0 
+logging trap notifications
+logging source-interface Loopback0
+logging host 172.16.50.1
+!
+!
+!
+!
+radius server Server1
+ address ipv4 172.16.50.1 auth-port 1812 acct-port 1813
+ key 7 021201481F575D72
+!
+!
+control-plane
+!
+!
+line con 0
+line aux 0
+line vty 5 15
+!
+ntp source Loopback0
+ntp server 172.16.50.1
+!
+end

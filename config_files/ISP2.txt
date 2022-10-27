@@ -1,0 +1,122 @@
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname ISP2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+!         
+!
+ip name-server 8.8.8.8
+ip name-server 8.8.4.4
+no ipv6 cef
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip tcp synwait-time 5
+! 
+!
+!
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ no ip address
+ shutdown
+ duplex auto
+!
+interface GigabitEthernet0/0
+ description Link to Simulated Internet
+ ip address dhcp
+ ip nat outside
+ media-type gbic
+ speed 1000
+ duplex full
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ description Link to Company Inc.
+ ip address 197.10.10.1 255.255.255.252
+ ip nat inside
+ negotiation auto
+!
+interface GigabitEthernet2/0
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet3/0
+ no ip address
+ shutdown
+ negotiation auto
+!
+router bgp 64502
+ bgp log-neighbor-changes
+ network 0.0.0.0
+ neighbor 197.10.10.2 remote-as 64500
+ neighbor 197.10.10.2 password isp2md5pass
+ neighbor 197.10.10.2 ttl-security hops 1
+ neighbor 197.10.10.2 route-map static_default out
+!
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list static_default seq 5 permit 0.0.0.0/0
+access-list 1 permit 195.1.1.0 0.0.0.255
+access-list 1 permit 197.10.10.0 0.0.0.3
+access-list 1 deny   any
+!
+route-map static_default permit 10
+ match ip address prefix-list static_default
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login
+!
+!
+end

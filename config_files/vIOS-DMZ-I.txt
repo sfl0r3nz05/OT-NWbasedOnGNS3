@@ -1,0 +1,130 @@
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname vIOS-DMZ-I
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$6DtG$twD5vtdTaNSxRT3eO39cz/
+!
+username admin secret 5 $1$az/O$NyIgazV2xiDIgrJB/xMKj.
+no aaa new-model
+clock timezone UTC+2 2 0
+!         
+!
+!
+!
+!
+vtp mode off
+!
+!
+!
+ip domain-name companyXYZ.sk
+ip name-server 195.1.1.161
+ip cef
+no ipv6 cef
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 10
+ name Servers_DMZ
+!
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/1
+ description Link to Serv-DMZ-I
+ switchport access vlan 10
+ switchport mode access
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ media-type rj45
+ negotiation auto
+!         
+interface GigabitEthernet0/3
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet0/0
+ description Link to ASAv-DMZ-I
+ no switchport
+ ip address 195.1.1.134 255.255.255.252
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ media-type rj45
+ negotiation auto
+!
+interface Vlan10
+ ip address 195.1.1.166 255.255.255.248
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 195.1.1.133
+!
+ip access-list standard ssh-access
+ permit 195.1.1.0 0.0.0.127
+ deny   any
+!
+!
+logging trap notifications
+logging host 195.1.1.161
+!
+!
+!         
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ login local
+line aux 0
+line vty 0 4
+ access-class ssh-access in
+ login local
+ transport input ssh
+line vty 5 1500
+ access-class ssh-access in
+ login local
+ transport input ssh
+!
+ntp server 195.1.1.161
+!
+end

@@ -1,0 +1,171 @@
+Building configuration...
+
+Current configuration : 3018 bytes
+!
+! Last configuration change at 17:13:32 mytimez Wed Sep 13 2017 by raadmin
+! NVRAM config last updated at 17:13:33 mytimez Wed Sep 13 2017 by raadmin
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname vIOS-Ser-I
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$exdM$B0mb.myrmFM2UV2iT29.71
+!
+username admin privilege 15 secret 5 $1$TFKh$mWcFYm.aW6zma8.TC/hWl0
+aaa new-model
+!
+!         
+aaa authentication login default group radius local
+aaa authentication enable default group radius enable
+aaa authorization console
+aaa authorization exec default group radius local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone mytimez 2 0
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name companyXYZ.sk
+ip name-server 172.16.50.1
+ip cef    
+no ipv6 cef
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.1.1.4 255.255.255.255
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 #MyPass!034
+!
+interface Port-channel1
+ switchport access vlan 50
+ switchport mode access
+!
+interface GigabitEthernet0/2
+ description Link to Server1
+ switchport access vlan 50
+ switchport mode access
+ media-type rj45
+ negotiation auto
+ channel-group 1 mode on
+!
+interface GigabitEthernet0/3
+ description Link2 to Server1
+ switchport access vlan 50
+ switchport mode access
+ media-type rj45
+ negotiation auto
+ channel-group 1 mode on
+!         
+interface GigabitEthernet0/0
+ description Link1 to ASAv-I 
+ no switchport
+ ip address 172.16.0.6 255.255.255.252
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 #MyPass!034
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ description Link2 to ASAv-I
+ no switchport
+ ip address 172.16.0.18 255.255.255.252
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 #MyPass!034
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/1
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/2
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet1/3
+ media-type rj45
+ negotiation auto
+!
+interface Vlan50
+ ip address 172.16.50.254 255.255.255.0
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 #MyPass!034
+!
+router ospf 1
+ router-id 10.1.1.4
+ passive-interface Vlan50
+ network 10.1.1.4 0.0.0.0 area 0
+ network 172.16.0.4 0.0.0.3 area 0
+ network 172.16.0.16 0.0.0.3 area 0
+ network 172.16.50.0 0.0.0.255 area 0
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+ip radius source-interface Loopback0 
+logging trap notifications
+logging source-interface Loopback0
+logging host 172.16.50.1
+!
+!
+!
+!
+radius server Server1
+ address ipv4 172.16.50.1 auth-port 1812 acct-port 1813
+ key test123
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 5 1500
+!
+ntp source Loopback0
+ntp server 172.16.50.1
+!
+end
