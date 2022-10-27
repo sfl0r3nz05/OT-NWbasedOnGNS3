@@ -16,6 +16,9 @@
 
 ![alt text](images/architecture.png "Architecture")
 
+## How to deploy GNS3 server
+1. Follow this instructions to [deploy the *GNS3 server* on an EC2 instance](./GNS3ServerDeployment/README.md)
+
 ### Configuration files
 
 1. [Open Switch Access I](./config_files/OpenSwitch-Acc-I.txt)
@@ -33,4 +36,4 @@
 13. [Switch DMZ](./config_files/vIOS-DMZ-I.txt)
 
 ### Devices/Images used
-1. **Access Layer Switch** based on [Open Switch 0.4.0](./devices_images/open_switch/open_switch.md) image
+1. **Access Layer Switch** based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image
