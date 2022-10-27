@@ -26,4 +26,16 @@ The Open Switch 0.4.0 Image can be downloaded as [VMDK](https://drive.google.com
 
 6. Imported VM:
 
+    ![alt text](./images/OpenSwitch1.png "Imported VM")
+
+7. Search icon:
+
+    ![alt text](./images/icon1.png "Imported VM")
+
+8. Change icon:
+
+    ![alt text](./images/OpenSwitch2.png "Imported VM")
+
+9. Apply and accept the Open Switch imported:
+
     ![alt text](./images/imported_vm.png "Imported VM")
