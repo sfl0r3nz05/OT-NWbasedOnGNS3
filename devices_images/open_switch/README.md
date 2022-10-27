@@ -6,25 +6,24 @@ The Open Switch 0.4.0 Image can be downloaded as [VMDK](https://drive.google.com
 
 1. Select VM from GNS3 preferences:
 
-    ![alt text](images/select_vm.png "Select VM")
+    ![alt text](./images/select_vm.png "Select VM")
 
 2. Name VM:
 
-    ![alt text](images/name_vm.png "Name VM")
+    ![alt text](./images/name_vm.png "Name VM")
 
 3. Define resources of VM:
 
-    ![alt text](images/define_resources_vm.png "Resources VM")
+    ![alt text](./images/define_resources_vm.png "Resources VM")
 
 4. Define access to VM:
 
-    ![alt text](images/define_access_vm.png "Access VM")
+    ![alt text](./images/define_access_vm.png "Access VM")
 
 5. Import VM:
 
-    ![alt text](images/import_vm.png "Import VM")
-
+    ![alt text](./images/import_vm.png "Import VM")
 
 6. Imported VM:
 
-    ![alt text](images/imported_vm.png "Imported VM")
+    ![alt text](./images/imported_vm.png "Imported VM")
