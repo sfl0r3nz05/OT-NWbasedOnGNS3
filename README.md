@@ -1,5 +1,11 @@
 # GNS3 Base Network
 
+- [GNS3 Base Network](#gns3-base-network)
+  - [Introduction](#introduction)
+  - [How to deploy GNS3 server](#how-to-deploy-gns3-server)
+    - [Configuration files](#configuration-files)
+    - [Devices/Images used](#devicesimages-used)
+
 ## Introduction
 
 - This network consists of the *access*, *distribution* and *core* layers. 
@@ -17,6 +23,7 @@
 ![alt text](images/architecture.png "Architecture")
 
 ## How to deploy GNS3 server
+
 1. Follow this instructions to [deploy the *GNS3 server* on an EC2 instance](./GNS3ServerDeployment/README.md).
 
 ### Configuration files
@@ -36,4 +43,5 @@
 13. [Switch DMZ](./config_files/vIOS-DMZ-I.txt)
 
 ### Devices/Images used
+
 1. **Access Layer Switch** based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image.
