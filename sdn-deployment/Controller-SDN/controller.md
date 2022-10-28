@@ -1,28 +1,28 @@
 # Controller installation
 
 - [Controller installation](#controller-installation)
-  - [Prerequisitos](#prerequisitos)
-  - [Desplegar OpenDayLight](#desplegar-opendaylight)
+  - [Prerequisites](#prerequisites)
+  - [Deploy OpenDayLight](#deploy-opendaylight)
 
-Esta sección establece los procedimientos para descargar y configurar el controlador.
+This section sets out the procedures for downloading and configuring the driver..
 
-## Prerequisitos
+## Prerequisites
 
-- Tener la instancia `t2.medium` (*SDN-Controller*) desplegada
-- Conexión a dicha instancia vía `ssh`.
-- [Instalar Docker sobre Ubuntu](https://docs.docker.com/engine/install/ubuntu/).
+- Have instance `t2.medium` (*SDN-Controller*) deployed.
+- Connection to this instance via `ssh`.
+- [Install Docker on Ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
-## Desplegar OpenDayLight
+## Deploy OpenDayLight
 
 > *Note:* The OpenDaylight Project is a collaborative open-source project hosted by the Linux Foundation. The project serves as a platform for software-defined networking for open, centralized, computer network device monitoring.
 
-1. Lanzar el contenedor:
+1. Launch container:
 
     ```console
      docker run -d --network host --name=opendaylight stephanfuhrmannionos/opendaylight:0.8.4
     ```
 
-2. Conectarse al contenedor:
+2. Connect to the container:
 
     ```console
     docker exec -ti opendaylight bin/client
@@ -89,7 +89,7 @@ Esta sección establece los procedimientos para descargar y configurar el contro
           feature:install odl-l2switch-switch odl-dlux-core odl-dluxapps-yangutils features-dlux odl-dluxapps-applications odl-dluxapps-yangvisualizer odl-dluxapps-topology odl-dluxapps-nodes odl-restconf-all odl-openflowplugin-southbound odl-l2switch-all odl-netconf-topology odl-yanglib odl-mdsal-all
           ```  
 
-5. Para verificar la lista de las features:
+5. To check the list of features:
 
     ```console
     feature:list
@@ -100,9 +100,9 @@ Esta sección establece los procedimientos para descargar y configurar el contro
    - `8101` Karaf CLI via SSH (see below),
    - `8181` RESTCONF / HTTP
 
-7. A través del navegador, y usando la IP pública de la instancia (e.g.: `http://35.174.155.88:8181/index.html#/login`) podremos ver la interfaz web del controller.
+7. Through the browser, and using the public IP of the instance (e.g.: `http://35.174.155.88:8181/index.html#/login`) we can see the controller's web interface.
 
-    1. Pero, en primer lugar, hay que introducir las credenciales que por defecto son:
+    1. Use the default credencials:
 
           ```console
           Username: admin
