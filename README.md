@@ -25,7 +25,7 @@ This repo requires the deployment of 2 instances (e.g. EC2 on AWS).
 
 ### How to start with the GNS3 Network
 
-1. Follow this instructions to [start with the *GNS3 Network* deployment on the *GNS3 Server*](./GNS3ServerDeployment/README.md).
+1. Follow this instructions to [start with the *GNS3 Network* deployment on the *GNS3 Server*](./Gns3Network/README.md).
 
 ## SDN Deployment
 
