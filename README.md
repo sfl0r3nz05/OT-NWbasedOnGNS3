@@ -2,13 +2,20 @@
 
 - [GNS3 Base Network](#gns3-base-network)
   - [Introduction](#introduction)
+  - [Network base](#network-base)
   - [How to deploy GNS3 server](#how-to-deploy-gns3-server)
     - [Configuration files](#configuration-files)
     - [Devices/Images used](#devicesimages-used)
+  - [SDN configurations](#sdn-configurations)
+
+> **Note:** This repo is under development ⛏.
+> > It is maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
 
 ## Introduction
 
-- This network consists of the *access*, *distribution* and *core* layers. 
+## Network base
+
+- This network consists of the *access*, *distribution* and *core* layers.
 
 - The *data center (DC)* is composed of the layer 3 Cisco switch and the server. The design of the DC is very simplified as the network tiers are squeezed to a single switch layer 3 switch. The aim is to show configuration of the services running on the Server1 instead of discussing the complete DC design. 
 
@@ -45,3 +52,7 @@
 ### Devices/Images used
 
 1. **Access Layer Switch** based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image.
+
+## SDN configurations
+
+1. Follow this instructions to deploy the [SDN-Controller connected to a GNS3 network](./sdn-deployment/README.md).
