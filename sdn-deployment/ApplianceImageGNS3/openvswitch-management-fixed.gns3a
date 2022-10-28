@@ -1,0 +1,21 @@
+{
+    "appliance_id": "1e9ff21e-4de8-4ae1-bde8-ed905ea96838",
+    "name": "Fixed Open vSwitch management",
+    "category": "multilayer_switch",
+    "description": "Open vSwitch is a production quality, multilayer virtual switch licensed under the open source Apache 2.0 license.  It is designed to enable massive network automation through programmatic extension, while still supporting standard management interfaces and protocols (e.g. NetFlow, sFlow, IPFIX, RSPAN, CLI, LACP, 802.1ag).  In addition, it is designed to support distribution across multiple physical servers similar to VMware's vNetwork distributed vswitch or Cisco's Nexus 1000V. This is a version of the appliance with a management interface on eth0.",
+    "vendor_name": "Open vSwitch",
+    "vendor_url": "http://openvswitch.org/",
+    "documentation_url": "http://openvswitch.org/support/",
+    "product_name": "Open vSwitch",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "This appliance is not maintained. This is just a fixed version of gns3/openvswitch:latest from 15.05.2022. The repo can be found here: https://gitlab.com/Fumeaux/openvswitch",
+    "maintainer_email": "Not maintained!",
+    "usage": "The eth0 is the management interface. By default all other interfaces are connected to the br0",
+    "symbol": "mgmt_station_docker.svg",
+    "docker": {
+        "adapters": 16,
+        "image": "c4zhuexbbagomn4o9x79vpn6tfe3x7/openvswitch-fixed:latest",
+        "environment": "MANAGEMENT_INTERFACE=1"
+    }
+}

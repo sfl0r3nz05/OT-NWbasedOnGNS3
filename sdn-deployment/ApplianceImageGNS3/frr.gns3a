@@ -1,0 +1,70 @@
+{
+    "appliance_id": "64f3dd9e-77bf-492c-a245-26d2a0e9bde8",
+    "name": "FRR",
+    "category": "router",
+    "description": "FRRouting (FRR) is an IP routing protocol suite for Linux and Unix platforms which includes protocol daemons for BGP, IS-IS, LDP, OSPF, PIM, and RIP.\n\nFRR's seamless integration with the native Linux/Unix IP networking stacks makes it applicable to a wide variety of use cases including connecting hosts/VMs/containers to the network, advertising network services, LAN switching and routing, Internet access routers, and Internet peering.\n\nThis is an unofficial VM of FRR.",
+    "vendor_name": "FRRouting Project",
+    "vendor_url": "https://frrouting.org",
+    "product_name": "FRR",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "Credentials: root / root\nIf you exit from the router CLI, you can get back by typing 'vtysh' to the console.",
+    "port_name_format": "eth{0}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 8,
+        "ram": 256,
+        "hda_disk_interface": "ide",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "allow"
+    },
+    "images": [
+        {
+            "filename": "frr-8.1.0.qcow2",
+            "version": "8.1.0",
+            "md5sum": "836d6a207f63f99a4039378f2b0c6123",
+            "filesize": 54063616,
+            "download_url": "https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/",
+            "direct_download_url": "http://downloads.sourceforge.net/project/gns-3/Qemu%20Appliances/frr-8.1.0.qcow2"
+        },
+        {
+            "filename": "frr-7.5.1.qcow2",
+            "version": "7.5.1",
+            "md5sum": "4b3ca0932a396b282ba35f102be1ed3b",
+            "filesize": 51169280,
+            "download_url": "https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/",
+            "direct_download_url": "http://downloads.sourceforge.net/project/gns-3/Qemu%20Appliances/frr-7.5.1.qcow2"
+        },
+        {
+            "filename": "frr-7.3.1.qcow2",
+            "version": "7.3.1",
+            "md5sum": "e6bd9591a5c630bfe2c8688dc043b20b",
+            "filesize": 47348224,
+            "download_url": "https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/",
+            "direct_download_url": "http://downloads.sourceforge.net/project/gns-3/Qemu%20Appliances/frr-7.3.1.qcow2"
+        }
+    ],
+    "versions": [
+        {
+            "name": "8.1.0",
+            "images": {
+                "hda_disk_image": "frr-8.1.0.qcow2"
+            }
+        },
+        {
+            "name": "7.5.1",
+            "images": {
+                "hda_disk_image": "frr-7.5.1.qcow2"
+            }
+        },
+        {
+            "name": "7.3.1",
+            "images": {
+                "hda_disk_image": "frr-7.3.1.qcow2"
+            }
+        }
+    ]
+}
