@@ -11,3 +11,8 @@ route add default gw 192.168.40.254
 echo "nameserver 172.16.50.1" > /etc/resolv.conf
 ```
 
+To save configuration we need to enter the command below.
+
+```console
+/usr/bin/filetool.sh -b
+```
