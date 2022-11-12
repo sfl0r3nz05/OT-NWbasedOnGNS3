@@ -25,7 +25,7 @@
 
 ### Field devices Layer
 
- - To deploy only simple PC follows this [documentation](./devices_images/SimplePC/README.md)
+ - To deploy only simple PC follows this [documentation](./devices_images/SimplePCs/README.md)
 
 ### Access Layer
 
