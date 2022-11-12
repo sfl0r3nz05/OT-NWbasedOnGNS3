@@ -32,5 +32,5 @@
 
 ## Devices/Images used
 
-1. **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image.
+1. **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/Open_Switch_0.4.0/README.md) image.
 2. **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./devices_images/Arista_vEOS_v4.17.2F/README.md) image.
