@@ -38,6 +38,8 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 
     <img src="./img/img-12.png" width=75% height=75%>
 
+> Note: [Troubleshooting section](../../Troubleshootings/DisableKVM/REAME.md)
+
 > Note: Update resources. E.g. RAM Memory:
 
 <img src="./img/img-13.png" width=75% height=75%>
