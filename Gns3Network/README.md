@@ -4,15 +4,15 @@
 
 - The *data center (DC)* is composed of the layer 3 Cisco switch and the server. The design of the DC is very simplified as the network tiers are squeezed to a single switch layer 3 switch. The aim is to show configuration of the services running on the Server1 instead of discussing the complete DC design. 
 
-- The company *edge router* is connected to the Internet using two *Internet Service Providers (ISPs)*. 
+- The company *edge router* is connected to the Internet using two *Internet Service Providers (ISPs)*.
 
-- The *Cisco ASA firewall* connects a campus network, data Center and the *edge router*. 
+- The *Cisco ASA firewall* connects a campus network, data Center and the *edge router*.
 
 - The *edge router* connected *DMZ* to the rest of the enterprise network and to the Internet. The DMZ consists of the *Cisco ASA firewall*, layer 3 Cisco switch and the *DMZ* server.
 
 - The enterprise is connected to the ISP1 and ISP2 routers via enterprise *edge router*. Both *ISP* routers  are bridged via *GNS3 clouds* to the server Ethernet Card in order to simulate connection to the Internet.
 
-![alt text](./images/architecture.png "Architecture")
+![alt text](./img/architecture.png "Architecture")
 
 ## Configuration files
 
@@ -32,4 +32,5 @@
 
 ## Devices/Images used
 
-1. **Access Layer Switch** based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image.
+1. **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/open_switch/README.md) image.
+2. **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./devices_images/Arista_vEOS_v4.17.2F/README.md) image.
