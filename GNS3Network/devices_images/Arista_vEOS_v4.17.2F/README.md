@@ -4,13 +4,13 @@ The distribution layer consists of two multilayer switches *vEOS-DIS-I* and *vEO
 
 The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https://drive.google.com/drive/folders/160xpqTIni3UpblYrfXz-k-_fLqbRMMgT?usp=sharing) and imported to GNS3 following next steps:
 
+>**Note:** Use the image: *vEOS-lab-4.17.10M-combined.vmdk*
+
 > Note: Consider to verify the [Troubleshooting section](../../../Troubleshootings/README.md).
 
 1. Select VM from GNS3 preferences:
 
     <img src="./img/img-1.png" width=75% height=75%>
-
-   >**Note:** Use the image: *vEOS-lab-4.17.10M-combined.vmdk*
 
 2. Name VM:
 
