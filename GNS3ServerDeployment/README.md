@@ -81,7 +81,7 @@ To perform the right deployment follow each of the following steps:
     gns3server
     ```
 
- >Note: if you do not show logs on stdout use: `gns3server --quiet` or `gns3server -q`
+    >Note: if you do not show logs on stdout use: `gns3server --quiet` or `gns3server -q`
 
    - It is now possible to access the GNS3 service:
 
