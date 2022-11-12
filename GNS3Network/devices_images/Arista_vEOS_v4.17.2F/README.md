@@ -6,7 +6,7 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 
 1. Select VM from GNS3 preferences:
 
-    ![alt text](./img/img-1.png "Select VM")
+    <img src="./img/img-1.png" width=50% height=50%>
 
 2. Name VM:
 
