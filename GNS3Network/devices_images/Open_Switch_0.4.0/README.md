@@ -6,36 +6,36 @@ The Open Switch 0.4.0 Image can be downloaded as [VMDK](https://drive.google.com
 
 1. Select VM from GNS3 preferences:
 
-    ![alt text](./img/select_vm.png "Select VM")
+    <img src="./img/select_vm.png" width=75% height=75%>
 
 2. Name VM:
 
-    ![alt text](./img/name_vm.png "Name VM")
+    <img src="./img/name_vm.png" width=75% height=75%>
 
 3. Define resources of VM:
 
-    ![alt text](./img/define_resources_vm.png "Resources VM")
+    <img src="./img/define_resources_vm.png" width=75% height=75%>
 
 4. Define access to VM:
 
-    ![alt text](./img/define_access_vm.png "Access VM")
+    <img src="./img/define_access_vm.png" width=75% height=75%>
 
 5. Import VM:
 
-    ![alt text](./img/import_vm.png "Import VM")
+    <img src="./img/import_vm.png" width=75% height=75%>
 
 6. Imported VM:
 
-    ![alt text](./img/OpenSwitch1.PNG "Imported VM")
+    <img src="./img/OpenSwitch1.PNG" width=75% height=75%>
 
 7. Search icon:
 
-    ![alt text](./img/icon1.PNG "Imported VM")
+    <img src="./img/icon1.PNG" width=75% height=75%>
 
 8. Change icon:
 
-    ![alt text](./img/OpenSwitch2.PNG "Imported VM")
+    <img src="./img/OpenSwitch2.PNG" width=75% height=75%>
 
 9. Apply and accept the Open Switch imported:
 
-    ![alt text](./img/imported_vm.png "Imported VM")
+    <img src="./img/imported_vm.png" width=75% height=75%>
