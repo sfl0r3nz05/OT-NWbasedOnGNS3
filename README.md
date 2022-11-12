@@ -36,4 +36,4 @@ This repo requires the deployment of 2 instances (e.g. EC2 on AWS).
 
 ## Troubleshootings
 
-1. [Disable KVM](./Troubleshootings/DisableKVM/README.md)
+1. [Troubleshootings](./Troubleshootings/README.md)
