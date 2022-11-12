@@ -16,7 +16,7 @@
 
 ## Building Layers
 
-	The strategy for building the GNS3 network is to go from the bottom layer to the top layer.
+  The strategy for building the GNS3 network is to go from the bottom layer to the top layer.
 
 ### Field devices
 
@@ -24,31 +24,31 @@
 
 #### Configuration files
 
-	- [Open Switch Access I](./config_files/OpenSwitch-Acc-I.txt)
+  - [Open Switch Access I](./config_files/OpenSwitch-Acc-I.txt)
 
-	- [Open Switch Access II](./config_files/OpenSwitch-Acc-II.txt)
+  - [Open Switch Access II](./config_files/OpenSwitch-Acc-II.txt)
 
 #### Donwload and deploy images
 
-	- **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/Open_Switch_0.4.0/README.md) image.
+  - **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/Open_Switch_0.4.0/README.md) image.
 
 ### Distribution Layer
 
 #### Configuration files
 
-	- [Switch Distribution I](./config_files/vEOS-DIS-I.txt)
-	- [Switch Distribution II](./config_files/vEOS-DIS-II.txt)
+  - [Switch Distribution I](./config_files/vEOS-DIS-I.txt)
+  - [Switch Distribution II](./config_files/vEOS-DIS-II.txt)
 
 #### Donwload and deploy images
 
-	- **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./devices_images/Arista_vEOS_v4.17.2F/README.md) image.
+  - **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./devices_images/Arista_vEOS_v4.17.2F/README.md) image.
 
 ### Core Layer
 
 #### Configuration files
 
-	- [Switch Core I](./config_files/vIOS-Core-I-1.txt)
-	- [Switch Core II](./config_files/vIOS-Core-II-1.txt)
+  - [Switch Core I](./config_files/vIOS-Core-I-1.txt)
+  - [Switch Core II](./config_files/vIOS-Core-II-1.txt)
 
 #### Donwload and deploy images
 
@@ -62,8 +62,3 @@
 11. [Router ISP2](./config_files/ISP2.txt)
 12. [Firewall CISCO ASA DMZ](./config_files/ASAv-DMZ-I.txt)
 13. [Switch DMZ](./config_files/vIOS-DMZ-I.txt)
-
-## Devices/Images used
-
-1. **Access Layer Switches** ares based on [Open Switch 0.4.0](./devices_images/Open_Switch_0.4.0/README.md) image.
-2. **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./devices_images/Arista_vEOS_v4.17.2F/README.md) image.
