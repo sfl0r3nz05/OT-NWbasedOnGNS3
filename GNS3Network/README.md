@@ -19,9 +19,13 @@
   The strategy for building the GNS3 network is to go from the bottom layer to the top layer.
 
  >**Note:** To deploy the field device layer it is recommended:
-  >> A first stage deploy simple PCs as field devices layer. A second stage these devices will be replaced by OT devices.
+  >> A first stage deploy simple PCs as field devices layer.
+
+  >> A second stage these devices will be replaced by OT devices.
 
 ### Field devices Layer
+
+ - To deploy only simple PC follows this [documentation](./devices_images/SimplePC/README.md)
 
 ### Access Layer
 
