@@ -27,7 +27,7 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 
 6. Imported VM:
 
-    <img src="./img/img-9.png" width=75% height=75%>
+    <img src="./img/img-7.png" width=75% height=75%>
 
 7. Search icon:
 
