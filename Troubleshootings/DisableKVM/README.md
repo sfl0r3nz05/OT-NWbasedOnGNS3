@@ -1,4 +1,4 @@
-# Disable KVM
+# Turn off KVM support in the gns3_server.conf
 
 When this error appear:
 

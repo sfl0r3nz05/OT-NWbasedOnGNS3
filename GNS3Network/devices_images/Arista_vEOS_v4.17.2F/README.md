@@ -10,6 +10,8 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 
     <img src="./img/img-1.png" width=75% height=75%>
 
+   >**Note:** Use the image: *vEOS-lab-4.17.10M-combined.vmdk*
+
 2. Name VM:
 
     <img src="./img/img-2.png" width=75% height=75%>
@@ -39,6 +41,12 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 8. Changed icon:
 
     <img src="./img/img-12.png" width=75% height=75%>
+
+9. Default credentials:
+
+   ```console
+   username: admin
+   ```
 
 > Note: Update resources. E.g. RAM Memory:
 

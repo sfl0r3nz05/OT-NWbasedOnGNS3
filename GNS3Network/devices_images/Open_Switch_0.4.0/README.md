@@ -39,3 +39,10 @@ The Open Switch 0.4.0 Image can be downloaded as [VMDK](https://drive.google.com
 9. Apply and accept the Open Switch imported:
 
     <img src="./img/imported_vm.png" width=75% height=75%>
+
+10. Default credentials to login:
+
+   ```console
+   username: netop
+   password: netop
+   ```
