@@ -26,16 +26,16 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
 
 6. Imported VM:
 
-    ![alt text](./img/ "Imported VM")
+    <img src="./img/img-7.png" width=75% height=75%>
 
 7. Search icon:
 
-    ![alt text](./img/ "Imported VM")
+    <img src="./img/img-8.png" width=75% height=75%>
 
 8. Change icon:
 
-    ![alt text](./img/ "Imported VM")
+    <img src="./img/img-9.png" width=75% height=75%>
 
 9. Apply and accept the Arista vEOS v4.17.2F imported:
 
-    ![alt text](./img/ "Imported VM")
+    <img src="./img/img-10.png" width=75% height=75%>
