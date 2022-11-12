@@ -34,10 +34,10 @@ The *Arista vEOS version 4.17.2F Qemu* Image can be downloaded as [VMDK](https:/
     <img src="./img/img-10.png" width=75% height=75%>
     <img src="./img/img-11.png" width=75% height=75%>
 
-8. Change icon:
+8. Changed icon:
 
     <img src="./img/img-12.png" width=75% height=75%>
 
-9. Apply and accept the Arista vEOS v4.17.2F imported:
+> Note: Update resources. E.g. RAM Memory:
 
     <img src="./img/img-13.png" width=75% height=75%>
