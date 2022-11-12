@@ -20,16 +20,16 @@ This repo requires the deployment of 2 instances (e.g. EC2 on AWS).
 1. Dedicated to the installation of the GNS3 server which will contain the experimental base network.
 2. Dedicated to SDN controller deployment.
 
-## GNS3 network
+## Experimental Base Network on GNS3
 
 ### How to deploy GNS3 server
 
 1. Follow this instructions to [deploy the *GNS3 server* on an EC2 instance](./GNS3ServerDeployment/README.md).
 
-### How to start with the GNS3 Network
+### How to start with the Experimental Base Network on GNS3.
 
-1. Follow this instructions to [start with the *GNS3 Network* deployment on the *GNS3 Server*](./GNS3Network/README.md).
+1. Follow this instructions to [start with the deployment of the *Experimental base Network* on the GNS3 Server*](./GNS3Network/README.md).
 
 ## SDN Deployment
 
-1. Follow this instructions to deploy the [SDN-Controller connected to a GNS3 network](./SDNDeployment/README.md).
+1. Follow this instructions to deploy the [SDN-Controller connected to the Experimental Base Network](./SDNDeployment/README.md).
