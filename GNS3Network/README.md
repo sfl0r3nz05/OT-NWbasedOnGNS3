@@ -12,7 +12,7 @@
 
 - The enterprise is connected to the ISP1 and ISP2 routers via enterprise *edge router*. Both *ISP* routers  are bridged via *GNS3 clouds* to the server Ethernet Card in order to simulate connection to the Internet.
 
-![alt text](./img/architecture.png "Architecture")
+  <img src="./img/architecture.png"  width=75% height=75%>
 
 ## Building Layers
 
