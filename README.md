@@ -28,7 +28,7 @@ This repo requires the deployment of 2 instances (e.g. EC2 on AWS).
 
 ### How to start with the Experimental Base Network on GNS3.
 
-1. Follow this instructions to [start with the deployment of the *Experimental base Network* on the GNS3 Server*](./GNS3Network/README.md).
+1. Follow this instructions to [start with the deployment of the *Experimental base Network* on the GNS3 Server](./GNS3Network/README.md).
 
 ## SDN Deployment
 
