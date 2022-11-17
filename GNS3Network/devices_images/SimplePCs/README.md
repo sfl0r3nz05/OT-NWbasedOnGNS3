@@ -16,3 +16,14 @@ To save configuration we need to enter the command below.
 ```console
 /usr/bin/filetool.sh -b
 ```
+
+# VPCS Configuration
+
+GNS3 has built-in end device VPCS that is simple to configure. The pictures below detail the name, IP, and gateway configuration.
+
+<img width="348" alt-"Screenshot 2022-11-17 at 22 07 23" src="https://user-images.githubusercontent.com/69375071/202468500-1180a829-810b-45f8-8be1-d675e1acf720. png">
+
+In the IP line, '192.168.10.1/24 indicates the IP address and subnet mask, and '192.168.10.254' is the gateway.
+
+<ima width="772" alt="Screenshot 2022-11-17 at 22 07 37" src="https://user-images.githubusercontent.com/69375071/202468542-79819814-868b-456-a307-268aa6fda249. png">
+  
