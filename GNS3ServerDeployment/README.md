@@ -1,6 +1,6 @@
-# GNS3 server configuration on an EC2 instance
+# Deployment of GNS3 server on EC2 instance
 
-- [GNS3 server configuration on an EC2 instance](#gns3-server-configuration-on-an-ec2-instance)
+- [Deployment of GNS3 server on EC2 instance](#deployment-of-gns3-server-on-ec2-instance)
   - [Deploy GNS3 Server](#deploy-gns3-server)
   - [Connect to GNS3 Server from GNS3 client](#connect-to-gns3-server-from-gns3-client)
   - [How to bypass a network of restrictions by tunneling](#how-to-bypass-a-network-of-restrictions-by-tunneling)

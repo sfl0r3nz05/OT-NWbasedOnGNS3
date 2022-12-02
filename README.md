@@ -1,39 +1,33 @@
-# Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems
+# Adaptive Countermeasure based on SDN for ICS
 
-- [Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems](#adaptive-countermeasure-based-on-software-defined-networking-for-industrial-control-systems)
+- [Adaptive Countermeasure based on SDN for ICS](#adaptive-countermeasure-based-on-sdn-for-ics)
+  - [Terminologies](#terminologies)
   - [Prerequisites](#prerequisites)
-  - [GNS3 network](#gns3-network)
-    - [How to deploy GNS3 server](#how-to-deploy-gns3-server)
-    - [How to start with the GNS3 Network](#how-to-start-with-the-gns3-network)
-  - [SDN Deployment](#sdn-deployment)
+  - [Deployment of Experimental Base Network on GNS3 Server](#deployment-of-experimental-base-network-on-gns3-server)
+  - [Deployment of SDN Controller](#deployment-of-sdn-controller)
+  - [Troubleshootings](#troubleshootings)
 
-> **Note:** This repo is under development ⛏.
-> > It is maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk), [Mikel Dean](mdeanoses@ceit.es) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
+> **Note:** This repo is under development ⛏ and maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk), [Mikel Dean](mdeanoses@ceit.es) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
 
-> **Note:** Check the meeting minutes ✏.
-> > [Meeting minutes](./minutes)
+> **Note:** Check the [Meeting minutes](./Meeting%20Minutes/) ✏.
+
+## Terminologies
+
+- SDN = Software Defined Networking
+- ICS = Industrial Control System
 
 ## Prerequisites
 
-This repo requires the deployment of 2 instances (e.g. EC2 on AWS).
+This repo requires the deployment of 2 AWS EC2 instances. One instance hosts the GNS3 server which runs the experimental base network, the other hosts the SDN controller.
 
-1. Dedicated to the installation of the GNS3 server which will contain the experimental base network.
-2. Dedicated to SDN controller deployment.
+## Deployment of Experimental Base Network on GNS3 Server
 
-## Experimental Base Network on GNS3
+1. [Deploy the GNS3 server](./GNS3ServerDeployment/README.md) on an EC2 instance.
 
-### How to deploy GNS3 server
+2. [Deploy the Experimental base Network](./GNS3Network/README.md) on the GNS3 Server.
 
-1. Follow this instructions to [deploy the *GNS3 server* on an EC2 instance](./GNS3ServerDeployment/README.md).
+## Deployment of SDN Controller
 
-### How to start with the Experimental Base Network on GNS3.
+1. [Deploy the SDN-Controller](./SDNDeployment/README.md) connected to the Experimental Base Network.
 
-1. Follow this instructions to [start with the deployment of the *Experimental base Network* on the GNS3 Server](./GNS3Network/README.md).
-
-## SDN Deployment
-
-1. Follow this instructions to deploy the [SDN-Controller connected to the Experimental Base Network](./SDNDeployment/README.md).
-
-## Troubleshootings
-
-1. [Troubleshootings](./Troubleshootings/README.md)
+## [Troubleshootings](./Troubleshootings/README.md)
