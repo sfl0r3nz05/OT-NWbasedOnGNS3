@@ -19,30 +19,30 @@
 
 ### End devices
 
-- To deploy only simple PC follows this [documentation](./Devices-Configurations/devices_images/SimplePCs/README.md)
+- To deploy only simple PC follows this [documentation](./../Devices-Configurations/devices_images/SimplePCs/README.md)
 
 ### Access Layer
 
 #### Download and deploy images
 
-- **Access Layer Switches** ares based on [Open Switch 0.4.0](./Devices-Configurations/devices_images/Open_Switch_0.4.0/README.md) image.
+- **Access Layer Switches** ares based on [Open Switch 0.4.0](./../Devices-Configurations/devices_images/Open_Switch_0.4.0/README.md) image.
 
 #### Configuration files
 
-- [Open Switch Access I](./Devices-Configurations/config_files/OpenSwitch-Acc-I.txt)
+- [Open Switch Access I](./../Devices-Configurations/config_files/OpenSwitch-Acc-I.txt)
 
-- [Open Switch Access II](./Devices-Configurations/config_files/OpenSwitch-Acc-II.txt)
+- [Open Switch Access II](./../Devices-Configurations/config_files/OpenSwitch-Acc-II.txt)
 
 ### Distribution Layer
 
 #### Download and deploy images
 
-- **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./Devices-Configurations/devices_images/Arista_vEOS_v4.17.2F/README.md) image.
+- **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./../Devices-Configurations/devices_images/Arista_vEOS_v4.17.2F/README.md) image.
 
 #### Configuration files
 
-- [Switch Distribution I](./Devices-Configurations/config_files/vEOS-DIS-I.txt)
-- [Switch Distribution II](./Devices-Configurations/config_files/vEOS-DIS-II.txt)
+- [Switch Distribution I](./../Devices-Configurations/config_files/vEOS-DIS-I.txt)
+- [Switch Distribution II](./../Devices-Configurations/config_files/vEOS-DIS-II.txt)
 
 ### Core Layer
 
@@ -50,17 +50,17 @@
 
 #### Configuration files
 
-- [Switch Core I](./Devices-Configurations/config_files/vIOS-Core-I-1.txt)
-- [Switch Core II](./Devices-Configurations/config_files/vIOS-Core-II-1.txt)
+- [Switch Core I](./../Devices-Configurations/config_files/vIOS-Core-I-1.txt)
+- [Switch Core II](./../Devices-Configurations/config_files/vIOS-Core-II-1.txt)
 
 
 
 ## Other Layers
 
-7. [Firewall CISCO ASA](./Devices-Configurations/config_files/vASA-I.txt)
-8. [Switch Datacentre](./Devices-Configurations/config_files/vIOS-Serv-I.txt)
-9. [Router Edge](./Devices-Configurations/config_files/vIOS-EDGE-U.txt)
-10. [Router ISP1](./Devices-Configurations/config_files/ISP1.txt)
-11. [Router ISP2](./Devices-Configurations/config_files/ISP2.txt)
-12. [Firewall CISCO ASA DMZ](./Devices-Configurations/config_files/ASAv-DMZ-I.txt)
-13. [Switch DMZ](./Devices-Configurations/config_files/vIOS-DMZ-I.txt)
+1. [Firewall CISCO ASA](./../Devices-Configurations/config_files/vASA-I.txt)
+2. [Switch Datacentre](./../Devices-Configurations/config_files/vIOS-Serv-I.txt)
+3. [Router Edge](./../Devices-Configurations/config_files/vIOS-EDGE-U.txt)
+4. [Router ISP1](./../Devices-Configurations/config_files/ISP1.txt)
+5. [Router ISP2](./../Devices-Configurations/config_files/ISP2.txt)
+6. [Firewall CISCO ASA DMZ](./../Devices-Configurations/config_files/ASAv-DMZ-I.txt)
+7. [Switch DMZ](./../Devices-Configurations/config_files/vIOS-DMZ-I.txt)
