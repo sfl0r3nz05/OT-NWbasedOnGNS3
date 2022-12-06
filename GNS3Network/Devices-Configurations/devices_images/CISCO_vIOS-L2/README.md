@@ -5,7 +5,7 @@
 
 1. Select VM from GNS3 preferences:
 
-    <img src="./img/vm1.PNG" width=75% height=75%>
+    <img src="./img/vm1.PNG" width=50% height=50%>
 
 2. Select VM from GNS3 preferences:
 
