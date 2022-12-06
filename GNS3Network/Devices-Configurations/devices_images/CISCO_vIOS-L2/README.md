@@ -7,66 +7,66 @@
 
     <img src="./img/vm1.PNG" width=75% height=75%>
 
-2. Select VM from GNS3 preferences:
+2. Rename the image:
 
     <img src="./img/vm2.PNG" width=50% height=50%>
 
-3. Select VM from GNS3 preferences:
+3. Add the suggested memory RAM:
 
     <img src="./img/vm3.PNG" width=50% height=50%>
 
-4. Select VM from GNS3 preferences:
+4. Add the console type:
 
     <img src="./img/vm4.PNG" width=50% height=50%>
 
-5. Select VM from GNS3 preferences:
+5. Add a Cisco vIOS-L2 as new image:
 
     <img src="./img/vm5.PNG" width=75% height=75%>
 
-6. Select VM from GNS3 preferences:
+6. Start to upload the Cisco vIOS-L2 image:
 
     <img src="./img/vm6.PNG" width=75% height=75%>
 
-7. Select VM from GNS3 preferences:
+7. Continue uploading the Cisco vIOS-L2 image:
 
     <img src="./img/vm7.PNG" width=75% height=75%>
 
-8. Select VM from GNS3 preferences:
+8. Close to finish the the Cisco vIOS-L2 image uploading:
 
     <img src="./img/vm8.PNG" width=75% height=75%>
 
-9. Select VM from GNS3 preferences:
+9. Cisco vIOS-L2 image uploaded:
 
     <img src="./img/vm9.PNG" width=75% height=75%>
 
-10. Select VM from GNS3 preferences:
+10. Visualize the Cisco vIOS-L2 image uploaded:
 
     <img src="./img/vm10.PNG" width=75% height=75%>
 
-11. Select VM from GNS3 preferences:
+11. Try to change the icon of the Cisco vIOS-L2 image:
 
     <img src="./img/vm11.PNG" width=75% height=75%>
 
-12. Select VM from GNS3 preferences:
+12. Select the icon of the Cisco vIOS-L2 image:
 
     <img src="./img/vm12.PNG" width=60% height=60%>
 
-13. Select VM from GNS3 preferences:
+13. Finish the selection of the Cisco vIOS-L2 image icon:
 
     <img src="./img/vm13.PNG" width=75% height=75%>
 
-14. Select VM from GNS3 preferences:
+14. Icon changed:
 
     <img src="./img/vm14.PNG" width=75% height=75%>
 
-15. Select VM from GNS3 preferences:
+15. Visualize the Cisco vIOS-L2 image as part of the pipeline:
 
     <img src="./img/vm15.PNG" width=75% height=75%>
 
-16. Select VM from GNS3 preferences:
+16. Integrate the Cisco vIOS-L2 image as part of a blank project:
 
     <img src="./img/vm16.PNG" width=75% height=75%>
 
-17. Select VM from GNS3 preferences:
+17. Run the Cisco vIOS-L2 as device:
 
     <img src="./img/vm17.PNG" width=75% height=75%>
