@@ -23,42 +23,26 @@
 
 ### Access Layer
 
-#### Download and deploy images
-
-- **Access Layer Switches** ares based on [Open Switch 0.4.0](./../Devices-Configurations/devices_images/Open_Switch_0.4.0/README.md) image.
-
-#### Configuration files
-
-- [Open Switch Access I](./../Devices-Configurations/config_files/OpenSwitch-Acc-I.txt)
-
-- [Open Switch Access II](./../Devices-Configurations/config_files/OpenSwitch-Acc-II.txt)
+1. Read this [documentation](./../Devices-Configurations/devices_images/Open_Switch_0.4.0/README.md) to add Open Switch 0.4.0 image to the **Access Layer**.
+2. [Add this configuration on the Open Switch Access I](./../Devices-Configurations/config_files/OpenSwitch-Acc-I.txt)
+3. [Add this configuration on the Open Switch Access II](./../Devices-Configurations/config_files/OpenSwitch-Acc-II.txt)
 
 ### Distribution Layer
 
-#### Download and deploy images
-
-- **Distribution Layer Switches** are based on [Arista vEOS version 4.17.2F](./../Devices-Configurations/devices_images/Arista_vEOS_v4.17.2F/README.md) image.
-
-#### Configuration files
-
-- [Switch Distribution I](./../Devices-Configurations/config_files/vEOS-DIS-I.txt)
-- [Switch Distribution II](./../Devices-Configurations/config_files/vEOS-DIS-II.txt)
+1. Read this [documentation](./../Devices-Configurations/devices_images/Arista_vEOS_v4.17.2F/README.md) to add Arista vEOS version 4.17.2F image to the **Distribution Layer**.
+2. [Add this configuration on the Switch Distribution I](./../Devices-Configurations/config_files/vEOS-DIS-I.txt)
+3. [Add this configuration on the Switch Distribution II](./../Devices-Configurations/config_files/vEOS-DIS-II.txt)
 
 ### Core Layer
 
-#### Download and deploy images
-
-#### Configuration files
-
-- [Switch Core I](./../Devices-Configurations/config_files/vIOS-Core-I-1.txt)
-- [Switch Core II](./../Devices-Configurations/config_files/vIOS-Core-II-1.txt)
-
-
+1. Read this [documentation](./../Devices-Configurations/devices_images/) to add the CISCO vIOS-L2 image to the **Core Layer**.
+2. [Add this configuration on the Switch Core I](./../Devices-Configurations/config_files/vIOS-Core-I-1.txt)
+3. [Add this configuration on the Switch Core II](./../Devices-Configurations/config_files/vIOS-Core-II-1.txt)
 
 ## Other Layers
 
 1. [Firewall CISCO ASA](./../Devices-Configurations/config_files/vASA-I.txt)
-2. [Switch Datacentre](./../Devices-Configurations/config_files/vIOS-Serv-I.txt)
+2. [Switch Data center](./../Devices-Configurations/config_files/vIOS-Serv-I.txt)
 3. [Router Edge](./../Devices-Configurations/config_files/vIOS-EDGE-U.txt)
 4. [Router ISP1](./../Devices-Configurations/config_files/ISP1.txt)
 5. [Router ISP2](./../Devices-Configurations/config_files/ISP2.txt)
