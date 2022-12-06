@@ -36,7 +36,7 @@
     }
     ```
 
-6. Save the appliance file *cisco-asav.gns3a*.
+5. Save the appliance file *cisco-asav.gns3a*.
 
 ## How to add the appliance file
 
@@ -79,3 +79,27 @@
 10. Select VM from GNS3 preferences:
 
     <img src="./img/vm10.PNG" width=75% height=75%>
+
+11. Select VM from GNS3 preferences:
+
+    <img src="./img/vm11.PNG" width=75% height=75%>
+
+12. Select VM from GNS3 preferences:
+
+    <img src="./img/vm12.PNG" width=75% height=75%>
+
+13. Select VM from GNS3 preferences:
+
+    <img src="./img/vm13.PNG" width=75% height=75%>
+
+14. Select VM from GNS3 preferences:
+
+    <img src="./img/vm14.PNG" width=75% height=75%>
+
+15. Select VM from GNS3 preferences:
+
+    <img src="./img/vm15.PNG" width=75% height=75%>
+
+16. Select VM from GNS3 preferences:
+
+    <img src="./img/vm16.PNG" width=75% height=75%>
