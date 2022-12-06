@@ -44,7 +44,7 @@ To perform the right deployment follow each of the following steps:
     |-------------|-----------|
     | ![img](img/install-gns3-ubuntu-01.png) | ![img](img/install-gns3-ubuntu-02.png) |
 
-     > **Note:** To install specific versions use `sudo pip3 install gns3-server==2.2.34`
+     > **Note:** To install specific versions use for instance: `sudo pip3 install gns3-server==2.2.34`
 
 4. IOU (IOS over Unix) is an internal Cisco tool for simulating the ASICs in Cisco Switches. This enables you to play with Layer 2 switching in the Labs:
 
