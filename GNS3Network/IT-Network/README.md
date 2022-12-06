@@ -35,7 +35,7 @@
 
 ### Core Layer
 
-1. Read this [documentation](./../Devices-Configurations/devices_images/) to add the CISCO vIOS-L2 image to the **Core Layer**.
+1. Read this [documentation](./../Devices-Configurations/devices_images/CISCO_vIOS-L2/README.md) to add the CISCO vIOS-L2 image to the **Core Layer**.
 2. [Add this configuration on the Switch Core I](./../Devices-Configurations/config_files/vIOS-Core-I-1.txt)
 3. [Add this configuration on the Switch Core II](./../Devices-Configurations/config_files/vIOS-Core-II-1.txt)
 
