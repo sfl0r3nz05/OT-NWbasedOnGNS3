@@ -5,19 +5,19 @@
 
 1. Select VM from GNS3 preferences:
 
-    <img src="./img/vm1.PNG" width=50% height=50%>
+    <img src="./img/vm1.PNG" width=75% height=75%>
 
 2. Select VM from GNS3 preferences:
 
-    <img src="./img/vm2.PNG" width=75% height=75%>
+    <img src="./img/vm2.PNG" width=50% height=50%>
 
 3. Select VM from GNS3 preferences:
 
-    <img src="./img/vm3.PNG" width=75% height=75%>
+    <img src="./img/vm3.PNG" width=50% height=50%>
 
 4. Select VM from GNS3 preferences:
 
-    <img src="./img/vm4.PNG" width=75% height=75%>
+    <img src="./img/vm4.PNG" width=50% height=50%>
 
 5. Select VM from GNS3 preferences:
 
