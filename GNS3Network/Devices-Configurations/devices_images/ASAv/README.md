@@ -7,5 +7,32 @@
 
 ## How to add an image to appliance
 
-1. Open the appliance file *cisco-asav.gns3a*.
-2. For the *Cisco ASAv 9.9.1 Qemu* file downloaded
+1. Open the appliance file *cisco-asav.gns3a* with a text editor.
+
+2. The *Cisco ASAv 9.9.1* zip file contains next three files:
+    <img src="./img/vm1.PNG" width=75% height=75%>
+
+3. Add the next configuration into `images` array:
+
+    ```console
+    {
+        "filename": "asav991.qcow2",
+        "version": "9.9.1",
+        "md5sum": "40373fda0704d9272f89fd0bcbe4c69a",
+        "filesize": 229871616,
+        "download_url": "https://software.cisco.com/download/home/286119613/type/280775065/release/9.9.1"
+    }
+    ```
+
+4. Add the next configuration into `versions` array:
+
+    ```console
+    {
+        "name": "9.9.1",
+        "images": {
+            "hda_disk_image": "asav991.qcow2"
+        }
+    }
+    ```
+
+5. 
