@@ -2,7 +2,7 @@
 
 > **Note:** This repo is under development ⛏ and maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk), [Mikel Dean](mdeanoses@ceit.es) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
 
-  > **Note:** Check the [Meeting minutes](./Meeting%20Minutes/) ✏.
+>> Check the [Meeting minutes](./Meeting%20Minutes/) ✏.
 
 ## Terminologies
 
