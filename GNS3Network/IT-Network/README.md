@@ -41,7 +41,7 @@
 
 ### Firewall Layer
 
-1. Read this [documentation](./../Devices-Configurations/devices_images/ASAv/README.md) to add the CISCO vIOS-L2 image to the **Core Layer**.
+1. Read this [documentation](./../Devices-Configurations/devices_images/ASAv/README.md) to add the Firewall ASAv image to the **Firewall Layer**.
 2. [Add this configuration on the Firewall CISCO ASA](./../Devices-Configurations/config_files/vASA-I.txt)
 
 ## Other Layers

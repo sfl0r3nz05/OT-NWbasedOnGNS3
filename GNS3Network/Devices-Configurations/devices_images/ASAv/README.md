@@ -10,7 +10,7 @@
 1. Open the appliance file *cisco-asav.gns3a* with a text editor.
 
 2. The *Cisco ASAv 9.9.1* zip file contains next three files:
-    <img src="./img/vm1.PNG" width=75% height=75%>
+    <img src="./img/vm0.PNG" width=50% height=50%>
 
 3. Add the next configuration into `images` array:
 
