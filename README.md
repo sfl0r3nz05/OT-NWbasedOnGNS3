@@ -14,7 +14,7 @@
 This repo requires the deployment of 2 AWS EC2 instances:
 
 - The first instance hosts the GNS3 server running the experimental IT-Network/OT-Network.
-  - [Deployment of the GNS3 server](./GNS3ServerDeployment/README.md) on an EC2 instance.
+  - [Deploy the GNS3 server](./GNS3ServerDeployment/README.md) on an EC2 instance.
 - Second hosts the SDN controller.
 
 ## Deployment of Experimental IT Network on GNS3 Server
