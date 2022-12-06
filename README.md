@@ -1,15 +1,8 @@
 # Adaptive Countermeasure based on SDN for ICS
 
-  > **Note:** This repo is under development ⛏ and maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk), [Mikel Dean](mdeanoses@ceit.es) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
+> **Note:** This repo is under development ⛏ and maintained by [Ziyao Wang](ziyao.wang@se19.qmul.ac.uk), [Mikel Dean](mdeanoses@ceit.es) and [Santiago Figueroa](sfigueroa@ceit.es) as part of the project: *Adaptive Countermeasure based on Software-Defined Networking for Industrial Control Systems*.
 
   > **Note:** Check the [Meeting minutes](./Meeting%20Minutes/) ✏.
-
-- [Adaptive Countermeasure based on SDN for ICS](#adaptive-countermeasure-based-on-sdn-for-ics)
-  - [Terminologies](#terminologies)
-  - [Prerequisites](#prerequisites)
-  - [Deployment of Experimental IT Network on GNS3 Server](#deployment-of-experimental-it-network-on-gns3-server)
-  - [Deployment of SDN Controller](#deployment-of-sdn-controller)
-  - [Troubleshooting](#troubleshooting)
 
 ## Terminologies
 
