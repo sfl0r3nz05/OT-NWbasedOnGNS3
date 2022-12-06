@@ -40,66 +40,66 @@
 
 ## How to add the appliance file
 
-1. Select VM from GNS3 preferences:
+1. Select import appliance:
 
-    <img src="./img/vm1.PNG" width=50% height=50%>
+    <img src="./img/vm1.png" width=50% height=50%>
 
-2. Select VM from GNS3 preferences:
+2. Select the appliance:
 
-    <img src="./img/vm2.PNG" width=75% height=75%>
+    <img src="./img/vm2.PNG" width=50% height=50%>
 
-3. Select VM from GNS3 preferences:
+3. Select install the appliance on the main server:
 
     <img src="./img/vm3.PNG" width=75% height=75%>
 
-4. Select VM from GNS3 preferences:
+4. Select the qemu binary:
 
     <img src="./img/vm4.PNG" width=75% height=75%>
 
-5. Select VM from GNS3 preferences:
+5. Select the ASAv version to be imported:
 
     <img src="./img/vm5.PNG" width=75% height=75%>
 
-6. Select VM from GNS3 preferences:
+6. Select the ASAv version to be imported:
 
     <img src="./img/vm6.PNG" width=75% height=75%>
 
-7. Select VM from GNS3 preferences:
+7. Select the *ASAv image qcow2* to be imported:
 
     <img src="./img/vm7.PNG" width=75% height=75%>
 
-8. Select VM from GNS3 preferences:
+8. Start image importation:
 
     <img src="./img/vm8.PNG" width=75% height=75%>
 
-9. Select VM from GNS3 preferences:
+9. Continue image importation:
 
     <img src="./img/vm9.PNG" width=75% height=75%>
 
-10. Select VM from GNS3 preferences:
+10. Continue image importation:
 
     <img src="./img/vm10.PNG" width=75% height=75%>
 
-11. Select VM from GNS3 preferences:
+11. Imported *ASAv image qcow2*:
 
     <img src="./img/vm11.PNG" width=75% height=75%>
 
-12. Select VM from GNS3 preferences:
+12. Accept installation of the *ASAv image qcow2*:
 
     <img src="./img/vm12.PNG" width=75% height=75%>
 
-13. Select VM from GNS3 preferences:
+13. Make a description for the *ASAv image qcow2*:
 
     <img src="./img/vm13.PNG" width=75% height=75%>
 
-14. Select VM from GNS3 preferences:
+14. Receive a message when the *ASAv image qcow2* be installed:
 
     <img src="./img/vm14.PNG" width=75% height=75%>
 
-15. Select VM from GNS3 preferences:
+15. Verify the *ASAv firewall*:
 
     <img src="./img/vm15.PNG" width=75% height=75%>
 
-16. Select VM from GNS3 preferences:
+16. Add the *ASAv firewall*:
 
     <img src="./img/vm16.PNG" width=75% height=75%>
