@@ -13,6 +13,18 @@
 5. The *edge router* connected *DMZ* to the rest of the enterprise network and to the Internet. The DMZ consists of the *Cisco ASA firewall*, layer 3 Cisco switch and the *DMZ* server.
 6. The enterprise is connected to the ISP1 and ISP2 routers via enterprise *edge router*. Both *ISP* routers  are bridged via *GNS3 clouds* to the server Ethernet Card in order to simulate connection to the Internet.
 
+## Table of Devices and Images
+
+| Devices | Images | Notes |
+| --- | --- | --- |
+| PC1-4 | GNS3 built-in VPCS | |
+| OpenSwitch-Acc-I/II | [OpenSwitch-0.4.0.vmdk](https://drive.google.com/open?id=1u5CPt9_JVOd-cGBNEzPoAaWV7Dibe8vW) | @Deprecated |
+| vEOS-Dis-I/II | [vEOS-lab-4.17.10M.vmdk](https://www.arista.com/en/support/software-download) + [Aboot-veos-serial-8.0.0.iso](https://www.arista.com/en/support/software-download) | login to Arista to download (free as a guest) |
+| vIOS-Core-I/II, vIOS-Ser-I, vIOS-DMZ-I, vIOS-Edge-I | vIOS-L2 | |
+| ASAv-I, ASAv-DMZ-I | ASAv | |
+| ISP1/2 | Cisco 7206 | belongs to Cisco 7200 Series |
+| Server1, Server-DMZ-I | [ubuntu server vmdk](https://cloud-images.ubuntu.com/) | major LTS version is OK |
+
 ## Building Layers
 
   The strategy for building the GNS3 network is to go from the bottom layer to the top layer.
