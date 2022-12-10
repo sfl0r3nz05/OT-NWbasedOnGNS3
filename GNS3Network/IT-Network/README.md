@@ -19,11 +19,12 @@
 | --- | --- | --- |
 | PC1-4 | GNS3 built-in VPCS | |
 | OpenSwitch-Acc-I/II | [OpenSwitch-0.4.0.vmdk](https://drive.google.com/open?id=1u5CPt9_JVOd-cGBNEzPoAaWV7Dibe8vW) | @Deprecated |
-| vEOS-Dis-I/II | [vEOS-lab-4.17.10M.vmdk](https://www.arista.com/en/support/software-download) + [Aboot-veos-serial-8.0.0.iso](https://www.arista.com/en/support/software-download) | login to Arista to download (free as a guest) |
-| vIOS-Core-I/II, vIOS-Ser-I, vIOS-DMZ-I, vIOS-Edge-I | vIOS-L2 | |
-| ASAv-I, ASAv-DMZ-I | ASAv | |
-| ISP1/2 | Cisco 7206 | belongs to Cisco 7200 Series |
-| Server1, Server-DMZ-I | [ubuntu server vmdk](https://cloud-images.ubuntu.com/) | major LTS version is OK |
+| vEOS-Dis-I/II | [vEOS-lab-4.17.10M.vmdk](https://www.arista.com/en/support/software-download) + [Aboot-veos-serial-8.0.0.iso](https://www.arista.com/en/support/software-download) | login to Arista to download (free as a guest, one can register with an academic email account) |
+| vIOS-Core-I/II, vIOS-Ser-I, vIOS-DMZ-I | [vIOS-L2 15.2](https://drive.google.com/drive/folders/1Yo9V9vUJDkjWOtguarChq-nRKWoFT5m5) | from latest comments in this thread [gist.Github](https://gist.github.com/GustaveTsopmo/eb0512891a9bd9cd497d4fcbcd0efdc2) |
+| vIOS-Edge-I | [vIOS 15.6.2](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2) |from [UPW.IO](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2)|
+| ASAv-I, ASAv-DMZ-I | [ASAv 9.6.1](https://drive.google.com/drive/folders/1SO5uAsOoReus4qToCTYN-oNKYjc4n2Q8) | from [networkhunt](https://networkhunt.com/download/download-cisco-asav/) |
+| ISP1/2 | [Cisco 7200](https://drive.google.com/file/d/1nKteBUix69_-A0rxhxAovwmZt0O8Nq0v/view) | from comments in [GNS3 marketplace](https://gns3.com/marketplace/appliances/cisco-7200) |
+| Server1, Server-DMZ-I | [Ubuntu-Server-22.04LTS.img](https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img) | MUST follow [this guide](../Devices-Configurations/devices_images/Server/README.md) to set up local password login before importing |
 
 ## Building Layers
 
@@ -32,6 +33,7 @@
 ### End devices
 
 - To deploy only simple PC follows this [documentation](./../Devices-Configurations/devices_images/SimplePCs/README.md)
+- Read this [documentation](../Devices-Configurations/devices_images/Server/README.md) to quickly get a ubuntu server qcow2 instance.
 
 ### Access Layer
 
