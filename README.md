@@ -9,6 +9,8 @@
 - SDN = Software Defined Networking
 - ICS = Industrial Control System
 
+![img](https://www.kuppingercole.com/pics/OT_Configuration_Components.png)
+
 ## Prerequisites
 
 This repo requires the deployment of 2 AWS EC2 instances:
