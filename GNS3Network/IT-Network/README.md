@@ -23,7 +23,7 @@
 | vIOS-Core-I/II, vIOS-Ser-I, vIOS-DMZ-I | [vIOS-L2 15.2](https://drive.google.com/drive/folders/1Yo9V9vUJDkjWOtguarChq-nRKWoFT5m5) | from latest comments in this thread [gist.Github](https://gist.github.com/GustaveTsopmo/eb0512891a9bd9cd497d4fcbcd0efdc2) |
 | vIOS-Edge-I | [vIOS 15.6.2](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2) |from [UPW.IO](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2)|
 | ASAv-I, ASAv-DMZ-I | [ASAv 9.6.1](https://drive.google.com/drive/folders/1SO5uAsOoReus4qToCTYN-oNKYjc4n2Q8) | from [networkhunt](https://networkhunt.com/download/download-cisco-asav/) |
-| ISP1/2 | [Cisco 7200](https://drive.google.com/file/d/1nKteBUix69_-A0rxhxAovwmZt0O8Nq0v/view) | from comments in [GNS3 marketplace](https://gns3.com/marketplace/appliances/cisco-7200) |
+| ISP1/2 | [Cisco 7200](https://upw.io/4ui/c7200-advipservicesk9-mz.152-4.S5.image) | from [UPW.IO](https://upw.io/4ui/c7200-advipservicesk9-mz.152-4.S5.image) |
 | Server1, Server-DMZ-I | [Ubuntu-Server-22.04LTS.img](https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img) | MUST follow [this guide](../Devices-Configurations/devices_images/Server/README.md) to set up local password login before importing |
 
 ## Building Layers
