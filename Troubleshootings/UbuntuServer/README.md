@@ -4,6 +4,6 @@ This is the problem when you run `ip a` or `ifconfig -a` or `ip addr` in Server1
 
 It's mainly a "-nic none" issue which is the default launch configuration of GNS3 QEMU images. The simple solution is to add "-net nic -net user" options in additional settings, as shown in picture below.
 
-
+<img width="689" alt="Server1 Config" src="https://user-images.githubusercontent.com/69375071/209275999-114811bc-337f-40cd-9663-ef594b57383a.png">
 
 After that, start the Server1 and run `ip a`, you will see the additional `ens3` and `ens4` interfaces. Then `vim /etc/netplan/*.yaml` to change the network config according to identified interfaces name. Pay attention that YAML files are strictly structured by indentation. Finally, run `sudo netplan apply` to update the network config.
