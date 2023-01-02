@@ -2,7 +2,7 @@
 
 > You should complete all other configuration before configuring `Server1` and `Serv-DMZ-I`. This is to ensure a valid network is presented.
 
-![image](/img/X.png)
+![image](/img/14.png)
 
 - Login with username `ubuntu` and password `ubuntu`.
 - Use the following configuration for `Server1`.
