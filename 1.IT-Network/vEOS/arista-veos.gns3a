@@ -1,0 +1,55 @@
+{
+    "appliance_id": "c90f3ff3-4ed2-4437-9afb-21232fa92015",
+    "name": "vEOS",
+    "category": "multilayer_switch",
+    "description": "Arista vEOS Switch",
+    "vendor_name": "Arista",
+    "vendor_url": "http://www.arista.com/",
+    "documentation_url": "https://www.arista.com/assets/data/docs/Manuals/EOS-4.17.2F-Manual.pdf",
+    "product_name": "vEOS",
+    "product_url": "https://eos.arista.com/",
+    "registry_version": 3,
+    "status": "experimental",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "username: admin\nno password",
+    "symbol": ":/symbols/multilayer_switch.svg",
+    "first_port_name": "mgmt",
+    "port_name_format": "e{port1}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 8,
+        "ram": 2048,
+        "hda_disk_interface": "ide",
+        "hdb_disk_interface": "ide",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-nographic"
+    },
+    "images": [
+        {
+            "filename": "Aboot-veos-serial-8.0.0.iso",
+            "version": "8.0.0",
+            "md5sum": "488ad1c435d18c69bb8d69c7806457c9",
+            "filesize": 5242880,
+            "download_url": "https://www.arista.com/en/support/software-download"
+        },
+        {
+            "filename": "vEOS-lab-4.17.10M.vmdk",
+            "version": "4.17.10M",
+            "md5sum": "4968dc27ed48a434bce580a6559b589d",
+            "filesize": 608960512,
+            "download_url": "https://www.arista.com/en/support/software-download"
+        }
+    ],
+    "versions": [
+        {
+            "name": "4.17.10M",
+            "images": {
+                "hda_disk_image": "Aboot-veos-serial-8.0.0.iso",
+                "hdb_disk_image": "vEOS-lab-4.17.10M.vmdk"
+            }
+        }
+    ]
+}

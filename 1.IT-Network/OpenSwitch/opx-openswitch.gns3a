@@ -1,0 +1,44 @@
+{
+    "name": "OpenSwitch",
+    "category": "multilayer_switch",
+    "description": "OpenSwitch 0.4.0",
+    "vendor_name": "OPX",
+    "vendor_url": "https://www.openswitch.net/",
+    "product_name": "OpenSwitch",
+    "product_url": "http://archive.openswitch.net/",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "[openswitch]\nusername: netop\npassword: netop\n\n[underlying linux]\nusername: admin\npassword: admin",
+    "symbol": ":/symbols/classic/ethernet_switch.svg",
+    "first_port_name": "mgmt",
+    "port_name_format": "e{port1}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 8,
+        "ram": 1024,
+        "hda_disk_interface": "ide",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-nographic"
+    },
+    "images": [
+        {
+            "filename": "OpenSwitch.qcow2",
+            "version": "0.4.0",
+            "md5sum": "1989d5653718e0de830dec68a0475ac1",
+            "filesize": 457572352,
+            "download_url": "https://drive.google.com/open?id=1u5CPt9_JVOd-cGBNEzPoAaWV7Dibe8vW"
+        }
+    ],
+    "versions": [
+        {
+            "name": "0.4.0",
+            "images": {
+                "hda_disk_image": "OpenSwitch.qcow2"
+            }
+        }
+    ]
+}

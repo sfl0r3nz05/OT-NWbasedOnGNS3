@@ -1,0 +1,46 @@
+{
+    "appliance_id": "886c4059-4a10-4c62-ab59-7f02beeac292",
+    "name": "ASAv",
+    "category": "firewall",
+    "description": "Cisco Adaptive Security Virtual Appliance",
+    "vendor_name": "Cisco",
+    "vendor_url": "http://www.cisco.com/",
+    "documentation_url": "http://www.cisco.com/c/en/us/support/security/virtual-adaptive-security-appliance-firewall/products-installation-guides-list.html",
+    "product_name": "ASAv",
+    "product_url": "http://www.cisco.com/c/en/us/products/security/virtual-adaptive-security-appliance-firewall/index.html",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "no username\nno password",
+    "symbol": ":/symbols/classic/asa.svg",
+    "first_port_name": "mgmt",
+    "port_name_format": "Gi0/{0}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 8,
+        "ram": 2048,
+        "hda_disk_interface": "virtio",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-nographic"
+    },
+    "images": [
+        {
+            "filename": "asav961.qcow2",
+            "version": "9.6.1",
+            "md5sum": "aa9462c9c745c674bf102947e0ff0359",
+            "filesize": 174063616,
+            "download_url": "https://drive.google.com/drive/folders/1SO5uAsOoReus4qToCTYN-oNKYjc4n2Q8"
+        }
+    ],
+    "versions": [
+        {
+            "name": "9.6.1",
+            "images": {
+                "hda_disk_image": "asav961.qcow2"
+            }
+        }
+    ]
+}
