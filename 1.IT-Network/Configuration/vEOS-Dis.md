@@ -1,6 +1,6 @@
 # vEOS-Dis-I & II Configuration
 
-![image](/img/6.png)
+![image](https://user-images.githubusercontent.com/69375071/210246963-05925b98-edc1-48ee-b06d-87167bb5f29c.png)
 
 ## vEOS-Dis-I
 
