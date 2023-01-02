@@ -33,4 +33,4 @@
 
 |||
 |-|-|
-|![image](https://user-images.githubusercontent.com/69375071/210214741-14ee5e60-fc58-4088-ac05-1784571e8b23.png)|![image](https://user-images.githubusercontent.com/69375071/210248600-baa8416d-2215-4327-830c-b4ddf691f657.png)|
+|![image](https://user-images.githubusercontent.com/69375071/210248750-321402a7-896c-481b-97f3-739dff6248f9.png)|![image](https://user-images.githubusercontent.com/69375071/210248600-baa8416d-2215-4327-830c-b4ddf691f657.png)|
