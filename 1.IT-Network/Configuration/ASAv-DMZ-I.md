@@ -1,6 +1,6 @@
 # ASAv-DMZ-I Configuration
 
-![image](/img/12.png)
+![image](https://user-images.githubusercontent.com/69375071/210246350-34ba69d1-b039-4500-b0d8-9db66c9e54da.png)
 
 - ASAv will reboot on the first start, which is normal.
 - No need to login. No username and no password by default. When prompted by password, just press enter.
