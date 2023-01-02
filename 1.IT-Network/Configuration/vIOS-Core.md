@@ -1,6 +1,6 @@
 # vIOS-Core-I & II Configuration
 
-![image](/img/7.png)
+![image](https://user-images.githubusercontent.com/69375071/210247015-b6359b9b-2b75-4bc6-a59f-ff6dd0b90518.png)
 
 ## vIOS-Core-I
 
