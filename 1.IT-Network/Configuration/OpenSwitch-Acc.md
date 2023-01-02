@@ -1,6 +1,6 @@
 # OpenSwitch-Acc-I & II Configuration
 
-![image](https://user-images.githubusercontent.com/69375071/210246546-050b0db3-ab20-4443-8175-6f7534e8cf9f.png)
+![image](https://user-images.githubusercontent.com/69375071/210249340-0f4eab71-cb6c-41c2-b9e4-4e8c8be6caa5.png)
 
 ## OpenSwitch-Acc-I
 
