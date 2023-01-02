@@ -1,6 +1,6 @@
 # vIOS-Edge-I Configuration
 
-![image](/img/10.png)
+![image](https://user-images.githubusercontent.com/69375071/210247101-bd4574b5-01cc-4319-a11d-61ff599bb425.png)
 
 - No need to login. No username and no password by default.
 
