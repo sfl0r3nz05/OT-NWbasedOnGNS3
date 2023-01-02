@@ -4,7 +4,7 @@
 
 ## Network Description
 
-  <img src="./img/architecture.png"  width=75% height=75%>
+![image](https://user-images.githubusercontent.com/69375071/210197317-12a7553f-9dea-4a2c-9336-2f2b721b06b8.png)
 
 1. This network consists of 3 layers: *access*, *distribution* and *core*.
 2. The *data center (DC)* is composed of the layer 3 Cisco switch and the server. The design of the DC is very simplified as the network tiers are squeezed to a single switch layer 3 switch. The aim is to show configuration of the services running on the Server1 instead of discussing the complete DC design.
