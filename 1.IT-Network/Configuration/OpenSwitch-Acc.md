@@ -1,6 +1,6 @@
 # OpenSwitch-Acc-I & II Configuration
 
-![image](/img/4.png)
+![image](https://user-images.githubusercontent.com/69375071/210246546-050b0db3-ab20-4443-8175-6f7534e8cf9f.png)
 
 ## OpenSwitch-Acc-I
 
@@ -15,7 +15,7 @@ conf t
 
 > Notice the difference between enable mode and terminal config mode. The terminal config mode must have the header appended by `(config)#`
 
-![image](/img/5.png)
+![image](https://user-images.githubusercontent.com/69375071/210246578-11e96d9c-f379-495d-8544-f338d4c5eded.png)
 
 4. Copy and paste the following commands directly into the console. The console will exit to **enable mode** after these commands.
 
