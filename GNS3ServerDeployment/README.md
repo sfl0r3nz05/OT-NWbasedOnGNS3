@@ -8,7 +8,7 @@
 
 The purpose of this repository is to deploy a GNS3 server on an EC2 instance of AWS. The following figure shows the basic architecture of the deployment to be implemented:
 
-<img src="img/client-server.png" alt="drawing" width="300"/>
+![image](https://user-images.githubusercontent.com/69375071/210196949-15232346-a583-4ab8-a562-4d7811d152be.png)
 
 ## Deploy GNS3 Server
 
@@ -16,7 +16,7 @@ To perform the right deployment follow each of the following steps:
 
 1. We assume that we have an EC2 instance deployed with Ubuntu Server 20.04 as OS:
 
-    ![img](img/ec2.png)
+![image](https://user-images.githubusercontent.com/69375071/210196969-a4053982-94d3-4669-beae-49b45a0f73e5.png)
 
 2. The following rules apply for opening incoming connections from:
 
@@ -28,21 +28,21 @@ To perform the right deployment follow each of the following steps:
 
     - Example of applied rules
 
-    ![img](img/ports.png)
+![image](https://user-images.githubusercontent.com/69375071/210196983-7269b43f-6c0d-40cb-b9bd-cafd5c187720.png)
 
 3. GNS3 server installation:
 
     ```console
     sudo apt update
     sudo add-apt-repository ppa:gns3/ppa
-    sudo apt install gns3-server gns3-gui
+    sudo apt install gns3-server
     ```
 
     - It is recommended accept both options as part of the installation process:
 
     | Users able to run GNS3| Users able to capture packages |
     |-------------|-----------|
-    | ![img](img/install-gns3-ubuntu-01.png) | ![img](img/install-gns3-ubuntu-02.png) |
+    | ![image](https://user-images.githubusercontent.com/69375071/210197009-f2be56b9-9040-4600-87fb-83d1a92e90df.png) | ![image](https://user-images.githubusercontent.com/69375071/210197024-ff5d286f-4ba1-4772-a1c8-7a4051f21a93.png) |
 
      > **Note:** To install specific versions use for instance: `sudo pip3 install gns3-server==2.2.34`
 
@@ -56,13 +56,6 @@ To perform the right deployment follow each of the following steps:
 
 5. [Install Docker CE on Ubuntu 22.04|20.04|18.04](https://docs.docker.com/engine/install/ubuntu/).
 
-    - Add your user account to docker group.
-
-        ```console
-        sudo usermod -aG docker $USER
-        newgrp docker
-        ```
-
     - Verify installation by checking Docker version:
 
         ```console
@@ -72,7 +65,7 @@ To perform the right deployment follow each of the following steps:
     - After installing Docker and IOU, add your user to the following groups:
 
         ```console
-        for i in ubridge libvirt kvm wireshark docker; do
+        for i in ubridge libvirt kvm docker; do
             sudo usermod -aG $i $USER
         done
         ```
@@ -80,10 +73,10 @@ To perform the right deployment follow each of the following steps:
 6. Run GNS3 server:
 
     ```console
-    gns3server
+    gns3server -q --daemon
     ```
 
-    >Note: if you do not show logs on stdout use: `gns3server --quiet` or `gns3server -q`
+    >Note: `-q` for no console logging, `--daemon` runs gns3server as a daemon service that keeps running when the console exits
 
    - It is now possible to access the GNS3 service:
 
@@ -93,13 +86,13 @@ To perform the right deployment follow each of the following steps:
 
    - Verify the service:
 
-        <img src="img/front.png" alt="drawing" width="700"/>
+![image](https://user-images.githubusercontent.com/69375071/210197180-6d23f0f8-dc3b-4803-b45c-cdf1a0ed3da1.png)
 
 ## Connect to GNS3 Server from GNS3 client
 
 1. Now, it is time to connect to the server via the GNS3 client and configure the preferences properly.
 
-    <img src="img/server_preferences.png" alt="drawing" width="700"/>
+![image](https://user-images.githubusercontent.com/69375071/210197203-ee05d661-6bae-4cb8-8257-27ff49a66f67.png)
 
    - Default username/password:
 
@@ -110,7 +103,7 @@ To perform the right deployment follow each of the following steps:
 
 2. Verify that the server has connected properly.
 
-    <img src="img/output.png" alt="drawing" width="300"/>
+![image](https://user-images.githubusercontent.com/69375071/210197229-e9904096-9f2e-4f78-80b2-72a93303947a.png)
 
 ## How to bypass a network of restrictions by tunneling
 
@@ -130,7 +123,7 @@ ssh -N -i .\openstack.pem -L localhost:3080:172.31.88.200:3080 ubuntu@54.89.220.
 
 - The following figure shows how the client must be configured so that the traffic is redirected through the tunnel:
 
-    <img src="./img/bypassing_firewall.png"  width="60%" height="30%">
+![image](https://user-images.githubusercontent.com/69375071/210197244-b8121b0f-9b41-4e6b-9eb1-fa5647685811.png)
 
 ## To Do
 
