@@ -109,4 +109,4 @@ This section sets out the procedures for downloading and configuring the driver.
           Password: admin
           ```
 
-          ![image](./img/OpenDaylight.png)
+![image](https://user-images.githubusercontent.com/69375071/210203052-e651e96c-1775-4157-9077-fd02bb7b00da.png)
