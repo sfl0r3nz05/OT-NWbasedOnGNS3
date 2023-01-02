@@ -1,6 +1,6 @@
-# Experimental Base Network on GNS3
+# Experimental IT Network on GNS3
 
-- Current project status is available on MS Teams, due to a very large file size. Please contact [Ziyao Wang](mailto:ziyaowang@se19.qmul.ac.uk) for further information.
+Current project status is available on MS Teams, due to a very large file size.
 
 ## Network Description
 
@@ -13,56 +13,31 @@
 5. The *edge router* connected *DMZ* to the rest of the enterprise network and to the Internet. The DMZ consists of the *Cisco ASA firewall*, layer 3 Cisco switch and the *DMZ* server.
 6. The enterprise is connected to the ISP1 and ISP2 routers via enterprise *edge router*. Both *ISP* routers  are bridged via *GNS3 clouds* to the server Ethernet Card in order to simulate connection to the Internet.
 
-## Table of Devices and Images
+## GNS3 Appliances Import
 
-| Devices | Images | Notes |
-| --- | --- | --- |
-| PC1-4 | GNS3 built-in VPCS | |
-| OpenSwitch-Acc-I/II | [OpenSwitch-0.4.0.vmdk](https://drive.google.com/open?id=1u5CPt9_JVOd-cGBNEzPoAaWV7Dibe8vW) | @Deprecated |
-| vEOS-Dis-I/II | [vEOS-lab-4.17.10M.vmdk](https://www.arista.com/en/support/software-download) + [Aboot-veos-serial-8.0.0.iso](https://www.arista.com/en/support/software-download) | login to Arista to download (free as a guest, one can register with an academic email account) |
-| vIOS-Core-I/II, vIOS-Ser-I, vIOS-DMZ-I | [vIOS-L2 15.2](https://drive.google.com/drive/folders/1Yo9V9vUJDkjWOtguarChq-nRKWoFT5m5) | from latest comments in this thread [gist.Github](https://gist.github.com/GustaveTsopmo/eb0512891a9bd9cd497d4fcbcd0efdc2) |
-| vIOS-Edge-I | [vIOS 15.6.2](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2) |from [UPW.IO](https://upw.io/9fe/vios-adventerprisek9-m-15.6.2T.qcow2)|
-| ASAv-I, ASAv-DMZ-I | [ASAv 9.6.1](https://drive.google.com/drive/folders/1SO5uAsOoReus4qToCTYN-oNKYjc4n2Q8) | from [networkhunt](https://networkhunt.com/download/download-cisco-asav/) |
-| ISP1/2 | [Cisco 7200](https://upw.io/4ui/c7200-advipservicesk9-mz.152-4.S5.image) | from [UPW.IO](https://upw.io/4ui/c7200-advipservicesk9-mz.152-4.S5.image) |
-| Server1, Server-DMZ-I | [Ubuntu-Server-22.04LTS.img](https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img) | MUST follow [this guide](../Devices-Configurations/devices_images/Server/README.md) to set up local password login before importing |
+- Here I detail the generic process for importing an appliance, and provide a zip for all appliances to be downloaded and imported.
+- Download all required templates [here](./Appliances/gns3-appliances.zip)
+- TODO: to be added
 
-## Building Layers
+## Network Connection
 
-  The strategy for building the GNS3 network is to go from the bottom layer to the top layer.
+- Follow the picture above to connect all appliances. It's very simple and strightforward.
+- Pay attention that some appliances has port `mgmt` which is an alternative name for eth0 / e0. This is because port 0 is usually used as management port.
 
-### End devices
+## Network Configuration
 
-- To deploy only simple PC follows this [documentation](./../Devices-Configurations/devices_images/SimplePCs/README.md)
-- Read this [documentation](../Devices-Configurations/devices_images/Server/README.md) to quickly get a ubuntu server qcow2 instance.
-
-### Access Layer
-
-1. Read this [documentation](./../Devices-Configurations/devices_images/Open_Switch_0.4.0/README.md) to add Open Switch 0.4.0 image to the **Access Layer**.
-2. [Add this configuration on the Open Switch Access I](./../Devices-Configurations/config_files/OpenSwitch-Acc-I.txt)
-3. [Add this configuration on the Open Switch Access II](./../Devices-Configurations/config_files/OpenSwitch-Acc-II.txt)
-
-### Distribution Layer
-
-1. Read this [documentation](./../Devices-Configurations/devices_images/Arista_vEOS_v4.17.2F/README.md) to add Arista vEOS version 4.17.2F image to the **Distribution Layer**.
-2. [Add this configuration on the Switch Distribution I](./../Devices-Configurations/config_files/vEOS-DIS-I.txt)
-3. [Add this configuration on the Switch Distribution II](./../Devices-Configurations/config_files/vEOS-DIS-II.txt)
-
-### Core Layer
-
-1. Read this [documentation](./../Devices-Configurations/devices_images/CISCO_vIOS-L2/README.md) to add the CISCO vIOS-L2 image to the **Core Layer**.
-2. [Add this configuration on the Switch Core I](./../Devices-Configurations/config_files/vIOS-Core-I-1.txt)
-3. [Add this configuration on the Switch Core II](./../Devices-Configurations/config_files/vIOS-Core-II-1.txt)
-
-### Firewall Layer
-
-1. Read this [documentation](./../Devices-Configurations/devices_images/ASAv/README.md) to add the Firewall ASAv image to the **Firewall Layer**.
-2. [Add this configuration on the Firewall CISCO ASA](./../Devices-Configurations/config_files/vASA-I.txt)
-
-## Other Layers
-
-2. [Switch Data center](./../Devices-Configurations/config_files/vIOS-Serv-I.txt)
-3. [Router Edge](./../Devices-Configurations/config_files/vIOS-EDGE-U.txt)
-4. [Router ISP1](./../Devices-Configurations/config_files/ISP1.txt)
-5. [Router ISP2](./../Devices-Configurations/config_files/ISP2.txt)
-6. [Firewall CISCO ASA DMZ](./../Devices-Configurations/config_files/ASAv-DMZ-I.txt)
-7. [Switch DMZ](./../Devices-Configurations/config_files/vIOS-DMZ-I.txt)
+- Core
+  - End Devices: [PC1-4](./Configuration/PC.md)
+  - Access Layer: [OpenSwitch-Acc-I,II](./Configuration/OpenSwitch-Acc.md)
+  - Distribution Layer: [vEOS-Dis-I,II](./Configuration/vEOS-Dis.md)
+  - Core Layer: [vIOS-Core-I,II](./Configuration/vIOS-Core.md)
+- Firewall: [ASAv-I](./Configuration/ASAv-I.md)
+- Data Center:
+  - [vIOS-Ser-I](./Configuration/vIOS-Ser-I.md)
+  - [Server1](./Configuration/Server1.md)
+- Edge Router: [vIOS-Edge-I](./Configuration/vIOS-Edge-I.md)
+- ISP: [ISP1,2](./Configuration/ISP.md)
+- DMZ:
+  - [ASAv-DMZ-I](./Configuration/ASAv-DMZ-I.md)
+  - [vIOS-DMZ-I](./Configuration/vIOS-DMZ-I.md)
+  - [Serv-DMZ-I](./Configuration/Serv-DMZ-I.md)
