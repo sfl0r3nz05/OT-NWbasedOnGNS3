@@ -34,7 +34,7 @@
 - The device must be powered off.
 - **Double click** the device to show the config window. Edit the `Name` of the device and click `Apply` and then `OK`.
 
-![image](https://user-images.githubusercontent.com/69375071/210214902-badc6a04-8f04-4a85-9171-e024460722d2.png)
+![image](https://user-images.githubusercontent.com/69375071/210249045-e5e70657-af20-414f-89ce-3a11b2bf9a28.png)
 
 ### Configuring Network Adapters for Server1
 
