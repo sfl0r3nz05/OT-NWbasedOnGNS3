@@ -6,7 +6,7 @@
 
 - It's advised to enable `Show the grid`, `Snap to grid`, and `Show interface labels` in the view section of GNS3 client menu bar. You can get a better workspace from them.
 
-![image](/img/11.png)
+![image](https://user-images.githubusercontent.com/69375071/210214869-4f799ce6-8802-4d91-9067-09c19aedb078.png)
 
 ## Mapping Devices to Appliances
 
@@ -32,7 +32,7 @@
 - The device must be powered off.
 - **Double click** the device to show the config window. Edit the `Name` of the device and click `Apply` and then `OK`.
 
-![image](/img/13.png)
+![image](https://user-images.githubusercontent.com/69375071/210214902-badc6a04-8f04-4a85-9171-e024460722d2.png)
 
 ## Connecting Devices
 
@@ -42,7 +42,7 @@
 
 |||
 |-|-|
-|![image](/img/15.png)|![image](/img/16.png)|
+|![image](https://user-images.githubusercontent.com/69375071/210214930-29754228-799d-4b3f-82c0-2c9ed049e078.png)|![image](https://user-images.githubusercontent.com/69375071/210214939-7ba60df6-5270-4294-9799-7b48161fa01b.png)|
 
 - Follow the image below to connect all devices. It's very simple and strightforward.
 > Notice that some devices has port `mgmt` which is an alternative name for eth0 / e0. That's because port 0 is usually used as management port.
