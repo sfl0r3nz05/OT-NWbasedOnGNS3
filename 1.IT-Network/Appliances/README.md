@@ -7,30 +7,30 @@
 
 1. Select `Import appliance` from the menu bar of GNS3 client to open a `.gns3a` file.
 
-![image](/img/1.png)
+![image](https://user-images.githubusercontent.com/69375071/210214639-95e7f455-faed-462c-9c72-3b93b19976d5.png)
 
 2. Click `Next` twice for default options and then enter the `Install XXX appliance` window.
 
-![image](/img/4.png)
+![image](https://user-images.githubusercontent.com/69375071/210214665-8bb7eddf-150a-4985-9130-d12d971f02d0.png)
 
 3. Click on the subdirectory and notice that two buttons `Import` and `Download` appear at the bottom of the window. Click `Download` to open a download link for the image in your web browser.
 
 > Some appliances require multiple images. Make sure to download and import all of them.
 
-![image](/img/5.png)
+![image](https://user-images.githubusercontent.com/69375071/210214700-58abe174-740a-4b47-aa70-5b639d8cb842.png)
 
 4. After you download the image, click `Import` to upload it to GNS3 server. On success, the appliance status will be `Ready to install`. Select the root directory `XXX verion X.X.X` and then click `Next` to complete the importing process.
 
 > `Next` button will not work if you do not select the root directory.
 
-![image](/img/7.png)
+![image](https://user-images.githubusercontent.com/69375071/210214713-30d324f9-a07f-4d36-be70-1a583e8ab59a.png)
 
 5. Read the `Usage` carefully before configuring the network.
 
-![image](/img/8.png)
+![image](https://user-images.githubusercontent.com/69375071/210214725-ee6fbaf3-6553-4201-8df2-ad22ed8ee9ea.png)
 
 > You can review the `Usage` by right clicking the appliance from the sidebar, selecting `Configure template`, and navigating to `Usage` section.
 
 |||
 |-|-|
-|![image](/img/9.png)|![image](/img/10.png)|
+|![image](https://user-images.githubusercontent.com/69375071/210214741-14ee5e60-fc58-4088-ac05-1784571e8b23.png)|![image](https://user-images.githubusercontent.com/69375071/210214754-dee8dcc3-3392-4418-8eb0-872d08ba3991.png)|
