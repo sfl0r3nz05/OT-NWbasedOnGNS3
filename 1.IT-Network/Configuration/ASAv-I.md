@@ -1,6 +1,6 @@
 # ASAv-I Configuration
 
-![image](/img/8.png)
+![image](https://user-images.githubusercontent.com/69375071/210246415-962006be-4427-41ac-a280-51395ebde498.png)
 
 - ASAv will reboot on the first start, which is normal.
 - No need to login. No username and no password by default. When prompted by password, just press enter.
