@@ -6,12 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/69375071/210197317-12a7553f-9dea-4a2c-9336-2f2b721b06b8.png)
 
-1. This network consists of 3 layers: *access*, *distribution* and *core*.
-2. The *data center (DC)* is composed of the layer 3 Cisco switch and the server. The design of the DC is very simplified as the network tiers are squeezed to a single switch layer 3 switch. The aim is to show configuration of the services running on the Server1 instead of discussing the complete DC design.
-3. The company *edge router* is connected to the Internet using two *Internet Service Providers (ISPs)*.
-4. The *Cisco ASA firewall* connects a campus network, data Center and the *edge router*.
-5. The *edge router* connected *DMZ* to the rest of the enterprise network and to the Internet. The DMZ consists of the *Cisco ASA firewall*, layer 3 Cisco switch and the *DMZ* server.
-6. The enterprise is connected to the ISP1 and ISP2 routers via enterprise *edge router*. Both *ISP* routers  are bridged via *GNS3 clouds* to the server Ethernet Card in order to simulate connection to the Internet.
+TODO: merge contents from ICSVirtual repository.
 
 ## Table of Devices and Images
 

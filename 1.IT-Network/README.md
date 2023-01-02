@@ -15,14 +15,13 @@ Current project status is available on MS Teams, due to a very large file size.
 
 ## GNS3 Appliances Import
 
-- Here I detail the generic process for importing an appliance, and provide a zip for all appliances to be downloaded and imported.
+- Here I detail the generic process for importing an appliance/template, and provide a zip for all appliances to be downloaded and imported.
 - Download all required templates [here](./Appliances/gns3-appliances.zip)
 - TODO: to be added
 
-## Network Connection
+## Network Deployment
 
-- Follow the picture above to connect all appliances. It's very simple and strightforward.
-- Pay attention that some appliances has port `mgmt` which is an alternative name for eth0 / e0. This is because port 0 is usually used as management port.
+- Follow [this document](./Deployment/README.md) to map devices to appliances.
 
 ## Network Configuration
 
