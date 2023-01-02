@@ -1,6 +1,6 @@
 # vIOS-DMZ-I Configuration
 
-![image](/img/13.png)
+![image](https://user-images.githubusercontent.com/69375071/210247052-aa524a52-8186-49d4-963e-60ae35945b0a.png)
 
 - vIOSL2 console is a bit verbose.
 - No need to login. No username and no password by default.
