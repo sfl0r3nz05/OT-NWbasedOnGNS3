@@ -1,6 +1,6 @@
 # vIOS-Ser-I Configuration
 
-![image](/img/9.png)
+![image](https://user-images.githubusercontent.com/69375071/210247148-60ff5cf7-5f37-4e09-a077-fd6a8bf36eb8.png)
 
 - vIOSL2 console is a bit verbose.
 - No need to login. No username and no password by default.
