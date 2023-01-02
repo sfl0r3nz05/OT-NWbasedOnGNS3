@@ -1,4 +1,4 @@
-# OT Network on GNS3
+# Experimental OT Network on GNS3
 
 ## Network Description
 

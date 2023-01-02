@@ -11,4 +11,4 @@
 
 ## SDN controller Deployment
 
-- Deploy the *SDN-Controller* following this [documentation](./Controller-SDN/controller.md).
+- Deploy the *SDN-Controller* following this [documentation](./SDN-Controller/README.md).

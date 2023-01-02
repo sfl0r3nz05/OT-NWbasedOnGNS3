@@ -15,13 +15,11 @@ Current project status is available on MS Teams, due to a very large file size.
 
 ## GNS3 Appliances Import
 
-- Here I detail the generic process for importing an appliance/template, and provide a zip for all appliances to be downloaded and imported.
-- Download all required templates [here](./Appliances/gns3-appliances.zip)
-- TODO: to be added
+- Follow [this document](./Appliances/README.md) to import all required appliances to GNS3 server.
 
 ## Network Deployment
 
-- Follow [this document](./Deployment/README.md) to map devices to appliances.
+- Follow [this document](./Deployment/README.md) to map devices to appliances and connect all devices.
 
 ## Network Configuration
 

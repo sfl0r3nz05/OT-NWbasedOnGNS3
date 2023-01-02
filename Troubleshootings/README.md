@@ -1,4 +1,3 @@
 # Troubleshootings
 
-1. [Disable KVM](./DisableKVM/README.md)
-2. [Server1 Network Issue](./UbuntuServer/README.md)
+No error has been detected in the repository so far.
