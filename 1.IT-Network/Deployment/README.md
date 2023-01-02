@@ -41,7 +41,7 @@
 - The device must be powered off and **unlinked**.
 - **Double click** the device to show the config window. Navigate to `Network` section and change the number of `Adapters` to 2. Click `Apply` and then `OK`.
 
-![image](/img/1.png)
+![image](https://user-images.githubusercontent.com/69375071/210222657-c5b86044-892c-4361-bd01-bb292984a7bb.png)
 
 ## Connecting Devices
 
@@ -56,4 +56,4 @@
 - Follow the image below to connect all devices. It's very simple and strightforward.
 > Notice that some devices have port `mgmt` which is an alternative name for eth0 / e0. That's because port 0 is usually used as management port.
 
-![image](/img/2.png)
+![image](https://user-images.githubusercontent.com/69375071/210222682-ff2e0d4b-101a-4ed2-b300-6f1c98e9e1c8.png)
