@@ -1,6 +1,6 @@
 # ISP1 & 2 Configuration
 
-![image](/img/11.png)
+![image](https://user-images.githubusercontent.com/69375071/210246480-b910772a-a95f-470a-a77a-7121460e63ac.png)
 
 ## ISP1
 
