@@ -9,7 +9,7 @@
 - SDN = Software Defined Networking
 - ICS = Industrial Control System
 
-![img](https://www.kuppingercole.com/pics/OT_Configuration_Components.png)
+![image](https://user-images.githubusercontent.com/69375071/210196870-f1af4548-1d5f-4c7f-9654-5174ff9f5f75.png)
 
 ## Prerequisites
 
