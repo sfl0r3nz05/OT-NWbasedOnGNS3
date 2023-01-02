@@ -24,16 +24,16 @@ Current project status is available on MS Teams, due to a very large file size.
 ## Network Configuration
 
 - Core
-  - End Devices: [PC1-4](./Configuration/PC.md)
-  - Access Layer: [OpenSwitch-Acc-I,II](./Configuration/OpenSwitch-Acc.md)
-  - Distribution Layer: [vEOS-Dis-I,II](./Configuration/vEOS-Dis.md)
-  - Core Layer: [vIOS-Core-I,II](./Configuration/vIOS-Core.md)
+  - End Devices: [PC1 - 4](./Configuration/PC.md)
+  - Access Layer: [OpenSwitch-Acc-I & II](./Configuration/OpenSwitch-Acc.md)
+  - Distribution Layer: [vEOS-Dis-I & II](./Configuration/vEOS-Dis.md)
+  - Core Layer: [vIOS-Core-I & II](./Configuration/vIOS-Core.md)
 - Firewall: [ASAv-I](./Configuration/ASAv-I.md)
 - Data Center:
   - [vIOS-Ser-I](./Configuration/vIOS-Ser-I.md)
   - [Server1](./Configuration/Server1.md)
 - Edge Router: [vIOS-Edge-I](./Configuration/vIOS-Edge-I.md)
-- ISP: [ISP1,2](./Configuration/ISP.md)
+- ISP: [ISP1 & 2](./Configuration/ISP.md)
 - DMZ:
   - [ASAv-DMZ-I](./Configuration/ASAv-DMZ-I.md)
   - [vIOS-DMZ-I](./Configuration/vIOS-DMZ-I.md)
