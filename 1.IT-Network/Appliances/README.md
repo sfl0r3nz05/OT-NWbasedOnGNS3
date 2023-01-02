@@ -23,14 +23,14 @@
 
 > `Next` button will not work if you do not select the root directory.
 
-![image](https://user-images.githubusercontent.com/69375071/210214713-30d324f9-a07f-4d36-be70-1a583e8ab59a.png)
+![image](https://user-images.githubusercontent.com/69375071/210248364-4164a55a-89d3-4f92-824b-28e33ceeb104.png)
 
 5. Read the `Usage` carefully before configuring the network.
 
-![image](https://user-images.githubusercontent.com/69375071/210214725-ee6fbaf3-6553-4201-8df2-ad22ed8ee9ea.png)
+![image](https://user-images.githubusercontent.com/69375071/210248483-dfee17c9-ea86-4c1b-bee8-db25e9a9fc45.png)
 
 > You can review the `Usage` by right clicking the appliance from the sidebar, selecting `Configure template`, and navigating to `Usage` section.
 
 |||
 |-|-|
-|![image](https://user-images.githubusercontent.com/69375071/210214741-14ee5e60-fc58-4088-ac05-1784571e8b23.png)|![image](https://user-images.githubusercontent.com/69375071/210214754-dee8dcc3-3392-4418-8eb0-872d08ba3991.png)|
+|![image](https://user-images.githubusercontent.com/69375071/210214741-14ee5e60-fc58-4088-ac05-1784571e8b23.png)|![image](https://user-images.githubusercontent.com/69375071/210248600-baa8416d-2215-4327-830c-b4ddf691f657.png)|
