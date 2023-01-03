@@ -15,7 +15,7 @@ conf t
 
 > Notice the difference between enable mode and terminal config mode. The terminal config mode must have the header appended by `(config)#`
 
-![image](https://user-images.githubusercontent.com/69375071/210246578-11e96d9c-f379-495d-8544-f338d4c5eded.png)
+![image](https://user-images.githubusercontent.com/69375071/210293414-ca1baf79-ec91-413e-aea1-e922cc6e0b85.png)
 
 4. Copy and paste the following commands directly into the console. The console will exit to **enable mode** after these commands.
 
