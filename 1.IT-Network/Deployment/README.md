@@ -12,8 +12,9 @@
 ## Mapping Devices to Appliances
 
 1. Drag appliances from sidebar to workspace according to the image and table below.
-2. [Rename devices](#renaming-a-device) according to the image.
+2. [Rename devices](#renaming-a-device) according to the image below.
 3. [Configure network adapters](#configuring-network-adapters-for-server1) for `Server1`.
+4. [Check the host for available NICs](#checking-nics-of-the-host) to be used in `Cloud` devices.
 
 ![image](https://user-images.githubusercontent.com/69375071/210197317-12a7553f-9dea-4a2c-9336-2f2b721b06b8.png)
 
@@ -39,9 +40,25 @@
 ### Configuring Network Adapters for Server1
 
 - The device must be powered off and **unlinked**.
-- **Double click** the device to show the config window. Navigate to `Network` section and change the number of `Adapters` to 2. Click `Apply` and then `OK`.
+- **Double click** the device to show the config window. Navigate to `Network` section and change the number of `Adapters` to `2`, and then `Apply` and `OK`.
 
 ![image](https://user-images.githubusercontent.com/69375071/210222657-c5b86044-892c-4361-bd01-bb292984a7bb.png)
+
+### Checking NICs of the Host
+
+- Open a SSH terminal for the host where GNS3 server runs.
+- Use `ip a` to check all available NICs. Note the `state UP` of `enp5s0` and its IPv4 address `inet 192.168.0.2/24`, which means the NIC `enp5s0` has valid Internet connection.
+- Also, note the `state DOWN` of `wlo1` and its empty address, which means the NIC `wlo1` is not connected to the Internet.
+
+> The condition varies among different hosts, but the naming convention remains the same. Pay attention to NICs with names `ens?`, `enp?s0`, `wlo?`, `wlp?s0` and so on.
+
+> You can ignore the localhost `lo` and docker-created NICs `virbr0` and `docker0`.
+
+TODO image
+
+- Select an interface with access to the Internet when connecting `Cloud` devices in GNS3. In this example, select `enp5s0` instead of `wlo1`.
+
+TODO image
 
 ## Connecting Devices
 
@@ -53,7 +70,7 @@
 |-|-|
 |![image](https://user-images.githubusercontent.com/69375071/210214930-29754228-799d-4b3f-82c0-2c9ed049e078.png)|![image](https://user-images.githubusercontent.com/69375071/210214939-7ba60df6-5270-4294-9799-7b48161fa01b.png)|
 
-- Follow the image below to connect all devices. It's very simple and strightforward.
+- Follow the image below to connect all devices. It's very simple and straightforward.
 > Notice that some devices have port `mgmt` which is an alternative name for eth0 / e0. That's because port 0 is usually used as management port.
 
 ![image](https://user-images.githubusercontent.com/69375071/210222682-ff2e0d4b-101a-4ed2-b300-6f1c98e9e1c8.png)
