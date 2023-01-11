@@ -10,8 +10,7 @@
 ```console
 ip a
 ```
-
-TODO image
+![image](https://user-images.githubusercontent.com/69375071/211831061-3ac6b5f7-334f-46c8-99c7-ec2fd07bf2ad.png)
 
 3. Switch to root user and load a bonding module to Linux kernel.
 
