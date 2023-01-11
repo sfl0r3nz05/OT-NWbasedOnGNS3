@@ -54,11 +54,12 @@
 
 > You can ignore the localhost `lo` and docker-created NICs `virbr0` and `docker0`.
 
-TODO image
+![image](https://user-images.githubusercontent.com/69375071/211830581-df3713bd-9f7a-4ec9-a21e-3d53e3891d1a.png)
+
 
 - Select an interface with access to the Internet when connecting `Cloud` devices in GNS3. In this example, select `enp5s0` instead of `wlo1`.
 
-TODO image
+![image](https://user-images.githubusercontent.com/69375071/211830746-93452061-241f-418a-9aa3-fb83e0048ce5.png)
 
 ## Connecting Devices
 
